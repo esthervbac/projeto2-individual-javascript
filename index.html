@@ -23,5 +23,60 @@
                 </a>
             </div>
         </header>
+        <div class="content">
+            <div class="nova-transacao">
+                <span class="texto-nova-transacao">Nova transação</span>
+                <form class="formulario" name="formul">
+                    <label for="trans">Tipo de transação</label>
+                    <br>
+                    <select id="trans" name="trans">
+                        <option value="compra">Compra</option>
+                        <option value="venda">Venda</option>
+                    </select>
+                    <br>
+                    <label for="nome-merc">Nome da mercadoria</label>
+                    <br>
+                    <input type="text" id="nome-merc" class="nome-mercad" name="nome-merc" placeholder="Input" />
+                    <br>
+                    <label for="valor">Valor</label>
+                    <input type="text" id="valor" name="valor" class="valor1" placeholder="R$ 0,00" />
+                    <br>
+                    <input type="submit" value="Adicionar transação" />
+                </form>
+            </div>
+            <div class="extrato">
+                <span class="texto-extr-trans">Extrato de transações</span>
+                <div class="linha">
+                    <div class="linha-texto-merc">Mercadoria</div>
+                    <div class="linha-texto-val">Valor</div>
+                </div>
+                <hr>
+                <div class="linha1">
+                    <div class="sinalmais" id="sinalmais">+</div>
+                    <div class="linha1-texto" id="mercad1">Lorem ipsum dolor sit amet <br>consectetur</div>
+                    <div class="linha1-texto" id="valor1">R$ 12.999,99</div>
+                </div>
+                <hr>
+                <div class="linha2">
+                    <span class="sinalmenos" id="sinalmenos">-</span>
+                    <span class="linha2-texto" id="mercad2">Quis nostrud exercitation</span>
+                    <span class="linha2-texto" id="valor2">R$ 99,99</span>
+                    </div>
+                <hr>
+                <div class="linha3">
+                    <span class="sinalmais" id="sinalmais">+</span>
+                    <span class="linha3-texto" id="mercad3">Lorem ipsum</span>
+                    <span class="linha3-texto" id="valor3">R$ 9,99</span>
+                </div>
+                <hr>
+                <div class="linha4">
+                    <span class="linha4-texto" id="texto-total">Total</span>
+                    <span class="linha4-texto" id="total">R$ 12.909,99</span>
+                    <br>
+                    <span class="texto-lucro" id="lucro">[LUCRO]</span>
+                </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

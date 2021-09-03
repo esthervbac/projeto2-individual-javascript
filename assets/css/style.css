@@ -6,6 +6,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+hr {
+    width: 100%;
+}
+
 /*****Cabeçalho*****/
 
 .cabecalho {
@@ -58,7 +62,7 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
+    margin-top: 0%;
     max-width: 1100px;
     display: flex;
     flex-direction: row;
@@ -66,6 +70,8 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+/*****Área Nova Transação*****/
 
 .nova-transacao {
     width: 40%;
@@ -82,32 +88,86 @@ body {
     padding: 10px;
 }
 
+/*****Área Extrato*****/
+
 .extrato {
     width: 60%;
+    color: black;
+    margin-top: -6%;
     align-items: center;    
     justify-content: center;
-
-
+    font-size: 13px;
 }
 
-.texto-extr-trans {s
-    font-size: 16px;
-    font-weight: bold;
+.texto-extr-trans {
+    width: 100%;
+    height: 100%;
+    font-size: 16.5px;
+    font-weight: bolder;
     margin-left: 35%;
-    margin-bottom: 20%;
+    margin-bottom: 3%;
 }
 
-.linha, .linha1-sep, .linha2-sep, .linha3-sep, .linha4 {
+.linha, .linha1, .linha2, .linha3, .linha4 {
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: left;
+}
+
+.linha1-sep, .linha2-sep, .linha3-sep {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .linha-texto-merc {
-    padding-right: 60%;
+    padding-right: 50%;
+    font-weight: bold;
 }
 
-.sinalmais, .sinalmenos {
-    width: 10%;
+.linha-texto-merc, .linha1-texto-merc, .linha2-texto-merc, .linha3-texto-merc, .linha4-texto-total {
+    margin-left: -2%;
+}
+
+.linha-texto-val, .linha4-texto-total, .linha4-texto-val {
+    font-weight: bold;
+}
+
+.linha-texto-val, .linha1-texto-val, .linha2-texto-val, .linha3-texto-val, .linha4-texto-val, .lucro {
+    text-align: right;
+    margin-right: 4%;
+}
+
+.linha4-sep {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: right;
+
+}
+
+.linha1-texto-merc {
+    width: 30%;
+    text-align: left;
+    padding-right: 10%;
+}
+
+.linha-sep, .sinalmais, .sinalmenos, .sep {
+    width: 5%;
+    justify-content: center;
+    margin-left: 2%;
+    padding: 1%;
+}
+
+.sep-texto, .sep-total {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lucro {
+    font-size: 10px;
 }

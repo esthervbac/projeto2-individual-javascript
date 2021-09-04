@@ -253,3 +253,90 @@ input[type="submit"] {
     font-size: 10px;
     font-weight:lighter;
 }
+
+/*****Media Queries*****/
+
+@media screen and (max-width: 1315px) {
+    .menu {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 1196px) {
+    .menu {
+        width: 45%;
+    }
+
+    .texto-logo {
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 1103px) {
+    .menu {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 1071px) {
+    .menu {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1055px) {
+    .texto-logo {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    .menu {
+        width: 55%;
+    }
+
+    .texto-logo {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .menu {
+        width: 60%;
+    }
+
+    .texto-logo {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 917px) {
+    .menu {
+        width: 65%;
+    }
+
+    .texto-logo {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 874px) {
+    .menu {
+        width: 70%;
+    }
+    
+    .texto-logo {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 838px) {
+    .menu {
+        width: 75%;
+    }
+    
+    .texto-logo {
+        margin-left: 30%;
+    }
+}

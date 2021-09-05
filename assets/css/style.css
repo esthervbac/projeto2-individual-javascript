@@ -156,7 +156,6 @@ input[type="submit"] {
     border-radius: 5px;
     margin-top: 2.5%;
     margin-left: 2%;
-
 }
 
 .texto-nova-transacao {
@@ -270,12 +269,17 @@ input[type="submit"] {
 
     .texto-logo {
         margin-left: 3%;
+        margin-top: 2.5%;
     }
 }
 
 @media screen and (max-width: 1103px) {
     .menu {
         width: 47%;
+    }
+    .texto-logo {
+        margin-left: 5%;
+        margin-top: 2.5%;
     }
 }
 
@@ -297,7 +301,8 @@ input[type="submit"] {
     }
 
     .texto-logo {
-        margin-left: 10%;
+        margin-left: 5%;
+        margin-top: 3%;
     }
 }
 
@@ -307,7 +312,8 @@ input[type="submit"] {
     }
 
     .texto-logo {
-        margin-left: 15%;
+        margin-left: 6%;
+        margin-top:3.5%;
     }
 }
 
@@ -317,7 +323,8 @@ input[type="submit"] {
     }
 
     .texto-logo {
-        margin-left: 20%;
+        margin-left: 7%;
+        margin-top: 4%;
     }
 }
 
@@ -327,7 +334,8 @@ input[type="submit"] {
     }
     
     .texto-logo {
-        margin-left: 25%;
+        margin-left:8%;
+        margin-top: 4.5%;
     }
 }
 
@@ -337,6 +345,83 @@ input[type="submit"] {
     }
     
     .texto-logo {
-        margin-left: 30%;
+        margin-left: 9%;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 806px) {
+    .menu {
+        width: 100%;
+    }
+    
+    .texto-logo {
+        margin-left: 12%;
+    }
+
+    .content {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0%;
+        max-width: 1100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nova-transacao {
+        max-width: 1100px;
+        width: 90%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nova-transacao label {
+        display: flex;
+        width: 30%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .texto-nova-transacao { 
+        text-align: center;
+        margin-left: 0%;
+    }
+
+    .formulario {
+        width: 100%;
+        margin-left: -2%;
+    }
+
+    select {
+        width: 23%;
+    }
+
+    input {
+        width: 30%;
+    }
+
+    .valor1 {
+        width: 23%;
+    }
+
+    input[type="submit"] {
+        width: 30%;
+    }
+
+    .extrato {
+        max-width: 1100px;
+        width: 90%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .texto-extr-trans {
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
     }
 }

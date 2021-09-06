@@ -16,7 +16,7 @@
                 </div>
                 <div class="texto-logo">Controle financeiro</div>
             </div> 
-            <div class="menu">
+            <div class="menu" id="nav-links">
                 <a href="#" > 
                     Limpar Dados
                 </a> 
@@ -28,24 +28,31 @@
         <div class="content">
             <div class="nova-transacao">
                 <span class="texto-nova-transacao">Nova transação</span>
-                <form class="formulario" name="formul">
-                    <label for="trans">Tipo de transação</label>
-                    <br>
-                    <select id="trans" name="trans">
-                        <option value="compra">Compra</option>
-                        <option value="venda">Venda</option>
-                    </select>
-                    <br>
-                    <label for="nome-merc">Nome da mercadoria</label>
-                    <br>
-                    <input type="text" id="nome-merc" class="nome-mercad" name="nome-merc" placeholder="Input" />
-                    <br>
-                    <label for="valor">Valor</label>
-                    <br>
-                    <input type="text" id="valor" name="valor" class="valor1" placeholder="R$ 0,00" />
-                    <br> 
-                    <input type="submit" value="Adicionar transação" />
-                </form>
+                    <form class="formulario" name="formul">
+                        <div class="div-form">
+                            <div class="div-trans">
+                                <label for="trans">Tipo de transação</label>
+                    
+                                <select id="trans" name="trans">
+                                    <option value="compra">Compra</option>
+                                    <option value="venda">Venda</option>
+                                </select>
+                            </div>
+                            <div class="div-merc">
+                                <label for="nome-merc" class="mercad">Nome da mercadoria</label>
+                    
+                                <input type="text" id="nome-merc" class="nome-mercad" name="nome-merc" placeholder="Input" />
+                            </div>
+                            <div class="div-val">
+                                <label for="valor">Valor</label>
+                   
+                                <input type="text" id="valor" name="valor" class="valor1" placeholder="R$ 0,00" />
+                            </div>
+                        </div>
+                        <div class="div-input">
+                            <input type="submit" value="Adicionar transação" />
+                        </div>
+                    </form>
             </div>
             <div class="extrato">
                 <div class="texto-extr-trans">Extrato de transações</div>

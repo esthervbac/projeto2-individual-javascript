@@ -351,6 +351,7 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 806px) {
+
     .menu {
         width: 100%;
     }
@@ -374,16 +375,7 @@ input[type="submit"] {
     .nova-transacao {
         max-width: 1100px;
         width: 90%;
-        height: 350px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .nova-transacao label {
-        display: flex;
-        width: 30%;
-        flex-direction: row;
-        justify-content: space-between;
+        height: 220px;
     }
 
     .texto-nova-transacao { 
@@ -393,29 +385,71 @@ input[type="submit"] {
 
     .formulario {
         width: 100%;
-        margin-left: -2%;
     }
 
-    select {
-        width: 23%;
+    .div-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%; 
     }
 
-    input {
-        width: 30%;
+    .div-trans {
+        display: flex;
+        flex-direction: column;
+        width: 25%; 
     }
 
-    .valor1 {
-        width: 23%;
+    .div-trans select {
+        width: 160px;
+        height: 40px;
+        display: flex;
+    }
+
+    label.mercad {
+        margin-top: 7px;
+    }
+
+    .div-merc {
+        display: flex;
+        width: 50%; 
+        flex-direction: column;
+    }
+
+    .div-merc input {
+        width: 330px;
+        height: 38px;
+        display: flex;
+        margin-top: -5px;
+    }
+
+    .div-val {
+        width: 25%; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-val input {
+        width: 160px;
+        height: 38px;
+        display: flex;
+        margin-top: 3px;
+    }
+
+    .div input {
+        width: 40%; 
     }
 
     input[type="submit"] {
-        width: 30%;
+        width: 28%;
+        margin-left: 70%;
+        margin-top: 2%;
     }
 
     .extrato {
         max-width: 1100px;
         width: 90%;
-        margin-top: 10%;
+        margin-top: 5%;
         margin-bottom: 10%;
     }
 
@@ -425,3 +459,11 @@ input[type="submit"] {
         text-align: center;
     }
 }
+/*
+
+@media screen and (max-width: 768px) {
+
+
+}
+
+*/

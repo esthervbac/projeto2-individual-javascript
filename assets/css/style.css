@@ -15,6 +15,10 @@ hr {
     margin-top: -0.8%;
 }
 
+.hr-extrato {
+    display: none;
+}
+
 /*****Formulário*****/
 
 .formulario {
@@ -107,6 +111,10 @@ input[type="submit"] {
 }
 
 /*****Menu*****/
+
+.menu-expand {
+    display: none;
+}
 
 .menu {
     display: flex;
@@ -225,7 +233,6 @@ input[type="submit"] {
     width: 100%;
     flex-direction: column;
     justify-content: right;
-
 }
 
 .linha1-texto-merc {
@@ -256,10 +263,10 @@ input[type="submit"] {
 /*****Media Queries*****/
 
 @media screen and (max-width: 1315px) {
+
     .menu {
         width: 40%;
     }
-
 }
 
 @media screen and (max-width: 1196px) {
@@ -274,9 +281,11 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 1103px) {
+
     .menu {
         width: 47%;
     }
+
     .texto-logo {
         margin-left: 5%;
         margin-top: 2.5%;
@@ -284,18 +293,21 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 1071px) {
+
     .menu {
         width: 50%;
     }
 }
 
 @media screen and (max-width: 1055px) {
+
     .texto-logo {
         margin-left: 5%;
     }
 }
 
 @media screen and (max-width: 1028px) {
+
     .menu {
         width: 55%;
     }
@@ -307,6 +319,7 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 968px) {
+
     .menu {
         width: 60%;
     }
@@ -318,6 +331,7 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 917px) {
+
     .menu {
         width: 65%;
     }
@@ -329,6 +343,7 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 874px) {
+
     .menu {
         width: 70%;
     }
@@ -340,6 +355,7 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 838px) {
+
     .menu {
         width: 75%;
     }
@@ -421,6 +437,7 @@ input[type="submit"] {
         height: 38px;
         display: flex;
         margin-top: -5px;
+        margin-left: 3px;
     }
 
     .div-val {
@@ -433,11 +450,8 @@ input[type="submit"] {
         width: 160px;
         height: 38px;
         display: flex;
-        margin-top: 3px;
-    }
-
-    .div input {
-        width: 40%; 
+        margin-top: 2px;
+        margin-left: 1px;
     }
 
     input[type="submit"] {
@@ -459,11 +473,178 @@ input[type="submit"] {
         text-align: center;
     }
 }
-/*
 
 @media screen and (max-width: 768px) {
+    
+    .logo {
+        display: flex;
+        width: 8%;
+        margin-left: 5%;
+        align-items: center;
+    }    
 
+    .texto-logo {
+        font-weight: bold;
+        font-size: 18.5px;
+        letter-spacing: 0.8px;
+        margin-top: 2.5%;
+        margin-left: 31%;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header .menu-expand {
+        width: 8%;
+        height: 30px;
+        background-color: transparent;
+        display: block;
+        margin-right: 10px;
+      }
+
+      .tracinhos {
+          width: 30px;
+          height: 3px;
+          display: block;
+          background-color: black;
+          margin-bottom: 5px;
+          align-items: center;
+      }
+
+    .div-trans select {
+        width: 145px;
+    }
+
+    .div-merc input {
+        width: 300px;
+    }
+
+    .div-val input {
+        width: 145px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .div-trans select {
+        width: 130px;
+    }
+
+    .div-merc input {
+        width: 270px;
+    }
+
+    .div-val input {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+
+    .div-trans select {
+        width: 115px;
+    }
+
+    .div-merc input {
+        width: 240px;
+    }
+
+    .div-val input {
+        width: 115px;
+    }
+}
+
+
+@media screen and (max-width: 605px) {
+
+    .nova-transacao {
+        width: 90%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5%;
+        margin-left: 2%;
+        border: none;
+    }
+    
+    .texto-nova-transacao {
+        padding: 10px;
+        width: 100%;
+        font-size: 17px;
+        font-weight: bolder;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .formulario label {
+        width: 160px;
+    }
+
+    .div-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-trans select {
+        width: 500px;
+        height: 40px;
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    label.mercad {
+        margin-left: 5px;
+    }
+
+    .div-merc input {
+        width: 500px;
+        height: 38px;
+        display: flex;
+        margin-top: -5px;
+        margin-left: 3px;
+        margin-bottom: 15px;
+    }
+
+    .div-val input {
+        width: 500px;
+        height: 38px;
+        display: flex;
+        margin-top: 2px;
+        margin-left: 1px;
+        margin-bottom: 15px;
+    }
+    
+    input[type="submit"] {
+        margin-left: 1%;
+        width: 500px;
+    }
+
+    .hr-extrato {
+        display: block;
+        margin-top: 7%;
+        width: 90%;
+        height: 10px;
+    }
+
+    .extrato {
+        margin-top: 8%;
+
+    }
+}
+
+@media screen and (max-width: 552px) { 
 
 }
 
-*/
+@media screen and (max-width: 425px) { 
+
+}
+
+@media screen and (max-width: 375px) { 
+
+}
+
+@media screen and (max-width: 320px) { 
+
+}

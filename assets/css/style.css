@@ -86,7 +86,7 @@ input[type="submit"] {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    z-index: 1;
+    position: relative;
 }
 
 .logo-content {
@@ -128,7 +128,7 @@ input[type="submit"] {
     margin-top: 25px;
     margin-bottom: 15px;
     margin-right: 10%;
-    background: #fff;
+    background-color: #fff;
     padding: 12px;
     flex-direction: row;
 }
@@ -594,11 +594,16 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 768px) {
+
+    .logo-content {
+        width: 100%;
+        margin-left: -3%;
+    }
     
     .logo {
         display: flex;
         width: 8%;
-        margin-left: 5%;
+        margin-left: 15%;
         align-items: center;
     }    
 
@@ -606,57 +611,88 @@ input[type="submit"] {
         font-weight: bold;
         font-size: 18.5px;
         letter-spacing: 0.8px;
-        margin-top: 2.5%;
-        margin-left: 31%;
+        margin-top: 4.5%;
+        margin-left: 12%;
+        width: 320px;
     }
 
     .buttom-expand {
         display: block;
-      }
+        width: 50px;
+        position: absolute;
+        margin-left: 36%;
+        margin-top: -2%;
+      } 
 
-      .menu-main {
-        width: 50%;
-        margin-left: -24%;
-        z-index: 2;
-        text-align: right;
-        background-color: #333333;
-        transition: all 0.4s linear;
-
-      }
-
-      .menu {
-        width: 300px;
-        height: 100%;
+    .menu-vert {
+        max-width: 300px;
+        width: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
-    }  
+        background-color: transparent;
+        position: absolute;
+        margin-top: -4%;
+        margin-left: 4%;
+    }
+
+    .menu-vert div {
+        display: none;
+    }
 
     .menu-main .menu div {
+        max-width: 300px;
         width: 100%;
-        margin-top: 1%;
-        height: 100%; 
-        display: none; 
-        background-color: aqua;
-        color: white;
-        z-index: 2;
-        /* transition: all 0.4s linear; */
+        height: 100%;
+        margin-top: -4%;
+        margin-left: 4%;
+        display: none;
+        background-color: #333333;
+        z-index: 9;
+        transition: all 0.4s linear;
     }  
 
     .menu-main:hover .menu div {
         display: block;
     }
 
-    .menu  .link1 {
+    .menu .fechar a {
+        max-width: 300px;
+        width: 100%;
+        height: 50px;
+        display: block;
+        text-align: left;
         margin-bottom: 4%;
+    }
+
+    .fechar:hover .menu-main .menu div {
+        display: none;
+    }
+
+    .menu .links a {
+        background-color: red;
+        color: #ffffff;
+    }
+
+    .links a:hover {
+        color: #333333;
+        background-color: #c4c4c4;
+    }
+
+    .links div {
+        max-width: 300px;
+        width: 100%;
+        height: 50px;
+        margin-top: -50%;
+    }
+
+    div.link1.links {
+        text-align: right;
+        margin-right: 10px;
     }
 
     .menu a:nth-child(1)::after {
        display: none;
-    }
-
-    .fechar {
-        display: block;
-        text-align: left;
     }
 
     .div-trans select {

@@ -147,6 +147,7 @@ input[type="submit"] {
     display: none;
 }
 
+
 /*****Content*****/
 
 .content {
@@ -625,7 +626,7 @@ input[type="submit"] {
       } 
 
     .menu-vert {
-        max-width: 300px;
+        max-width: 230px;
         width: 100%;
         height: 100vh;
         display: flex;
@@ -633,35 +634,61 @@ input[type="submit"] {
         background-color: transparent;
         position: absolute;
         margin-top: -4%;
-        margin-left: 4%;
+        margin-left: 0.2%;
+        padding: 10px 16px;
     }
 
     .menu-vert div {
         display: none;
     }
 
+    .menu div {
+        width: 90%;
+        height: vh;
+        max-width: 230px;
+        text-align: right;
+        padding: 5px 20px 10px 20px;
+        
+    }
+
     .menu-main .menu div {
-        max-width: 300px;
+        max-width: 230px;
         width: 100%;
         height: 100%;
+        float: right;
         margin-top: -4%;
-        margin-left: 4%;
+        margin-left: 29%;
         display: none;
         background-color: #333333;
+        color: #ffffff;
         z-index: 9;
         transition: all 0.4s linear;
     }  
+
+    .menu .menu-vert div {
+        display: block;
+        background-color: #333333;
+        color: #ffffff;
+        padding: 22px 16px;
+        width: 80%;
+        border: none;
+        outline: none;
+        text-align: right;
+        cursor: pointer;
+        font-size: 17px;
+      }
 
     .menu-main:hover .menu div {
         display: block;
     }
 
     .menu .fechar a {
-        max-width: 300px;
+        max-width: 230px;
         width: 100%;
         height: 50px;
         display: block;
         text-align: left;
+        margin-left: -8%;
         margin-bottom: 4%;
     }
 
@@ -669,26 +696,32 @@ input[type="submit"] {
         display: none;
     }
 
+    div.fechar {
+        margin-bottom: -150px;
+    }
+
     .menu .links a {
-        background-color: red;
+        width: 90%;
+        background-color: #333333;
         color: #ffffff;
     }
 
-    .links a:hover {
+    .menu .links:hover {
         color: #333333;
-        background-color: #c4c4c4;
+        background-color: #c4c4c4; 
     }
 
-    .links div {
-        max-width: 300px;
+   .menu .links div {
+        background-color: #333333;
+        color: #ffffff;
+        max-width: 230px;
         width: 100%;
-        height: 50px;
-        margin-top: -50%;
+        height: 30px;
     }
 
     div.link1.links {
-        text-align: right;
-        margin-right: 10px;
+        margin-top: -181px;
+        margin-bottom: -362px;
     }
 
     .menu a:nth-child(1)::after {
@@ -831,3 +864,4 @@ input[type="submit"] {
 @media screen and (max-width: 320px) { 
 
 }
+

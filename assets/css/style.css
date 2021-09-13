@@ -122,7 +122,7 @@ input[type="submit"] {
 }
 
 .menu {
-    display: flex;
+    display: inline;
     width: 91%;
     justify-content: center;
     margin-top: 25px;
@@ -130,7 +130,6 @@ input[type="submit"] {
     margin-right: 10%;
     background-color: #fff;
     padding: 12px;
-    flex-direction: row;
 }
 
 .menu a {
@@ -138,15 +137,14 @@ input[type="submit"] {
     color: #121212;
 }  
 
-.link1 a:nth-child(1)::after {
+.menu .link1::after {
     content: " | ";
     padding: 15px;
 }
 
-.fechar {
+.menu img {
     display: none;
 }
-
 
 /*****Content*****/
 
@@ -598,14 +596,13 @@ input[type="submit"] {
 
     .logo-content {
         width: 100%;
-        margin-left: -3%;
+        margin-left: 13%;
     }
     
     .logo {
         display: flex;
         width: 8%;
-        margin-left: 15%;
-        align-items: center;
+        margin-left: -17%;
     }    
 
     .texto-logo {
@@ -613,128 +610,73 @@ input[type="submit"] {
         font-size: 18.5px;
         letter-spacing: 0.8px;
         margin-top: 4.5%;
-        margin-left: 12%;
+        margin-left: 63%;
         width: 320px;
+    }
+
+    .menu {
+        display: none;
     }
 
     .buttom-expand {
         display: block;
         width: 50px;
         position: absolute;
-        margin-left: 36%;
+        margin-left: 20%;
         margin-top: -2%;
       } 
 
-    .menu-vert {
+      .menu-main .menu-vert {
+        display: none;
+    }  
+
+    .menu-main:hover .menu-vert {
         font-family: 'Lato', sans-serif;
         color: #ffffff;
+        background-color: #333333;
         max-width: 230px;
         width: 100%;
         height: 100vh;
         display: flex;
         flex-direction: column;
-        background-color: transparent;
         position: absolute;
         margin-top: -4%;
-        margin-left: 0.2%;
-        padding: 10px 16px;
-    }
+        margin-left: -5%;
+    } 
 
-    .menu-vert div {
-        display: none;
-    }
-
-    .menu div {
-        font-family: 'Lato', sans-serif;
-        color: #ffffff;
-        width: 90%;
-        max-width: 230px;
-        text-align: right;
-        padding: 5px 20px 10px 20px;
-        
-    }
-
-    .menu-main .menu div {
-        max-width: 230px;
-        width: 100%;
-        height: 100%;
-        float: right;
-        margin-top: -4%;
-        margin-left: 29%;
-        display: none;
-        background-color: #333333;
-        color: #ffffff;
-        z-index: 9;
-        transition: all 0.4s linear;
-    }  
-
-    .menu .menu-vert div {
+    .menu-vert img {
         display: block;
-        background-color: #333333;
-        color: #ffffff;
-        padding: 22px 16px;
-        width: 80%;
-        border: none;
-        outline: none;
-        text-align: right;
-        cursor: pointer;
-        font-size: 17px;
-      }
-
-    .menu-main:hover .menu div {
-        display: block;
-    }
-
-    .menu .fechar a {
-        max-width: 230px;
-        width: 100%;
-        height: 50px;
-        display: block;
+        width: 56px;
+        height: 51px;
         text-align: left;
-        margin-left: -8%;
-        margin-bottom: 4%;
+        padding: 0px;
+        margin-top: -200%;
+        margin-left: 0;
     }
 
-    .fechar:hover .menu-main .menu div {
-        display: none;
-    }
-
-    div.fechar {
-        margin-bottom: -410%;
-        padding: 5px 20px 10px 20px;
-    }
-
-   .menu .links {
-    font-family: 'Lato', sans-serif;
-    max-width: 230px;
-    width: 100%;
-    height: 30px;
-    margin-top: 10%;
-    }
-
-    .menu .links a {
-        width: 90%;
+    .menu-vert a {
+        width: 100%;
         color: #ffffff;
-        height: 10%;
+        background-color: #333333;
+        text-align: right;
+        padding: 15px 0px 10px 0px;
     }
 
-    .menu .links:hover {
+    .menu-vert a:hover {
+        width: 110%;
         color: #333333;
         background-color: #c4c4c4; 
+        text-align: right;
+        padding: 15px 0px 10px 0px;
+        margin-left: -11.3px;
+
     }
 
-    div.links {
-        height: 10%;
+    .menu-vert .link1 a {
+        margin-top: 20%; 
     }
 
-    div.link1.links {
-        font-family: 'Lato', sans-serif;
-        color: #333333;
-        margin-top: 60%;
-        margin-bottom: -360%;
-    }
-
-    .menu a:nth-child(1)::after {
+    .menu-vert .link1::after {
        display: none;
     }
 
@@ -748,6 +690,74 @@ input[type="submit"] {
 
     .div-val input {
         width: 145px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .texto-logo {
+        font-weight: bold;
+        font-size: 18.5px;
+        letter-spacing: 0.8px;
+        margin-top: 4.5%;
+        margin-left: 53%;
+        width: 320px;
+    }
+
+    .menu-main:hover .menu-vert {
+        font-family: 'Lato', sans-serif;
+        color: #ffffff;
+        background-color: #333333;
+        max-width: 230px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: -4%;
+        margin-left: -6%;
+    } 
+}
+
+@media screen and (max-width: 735px) {
+    .texto-logo {
+        font-weight: bold;
+        font-size: 18.5px;
+        letter-spacing: 0.8px;
+        margin-top: 4.5%;
+        margin-left: 43%;
+        width: 320px;
+    }
+
+    .menu-main:hover .menu-vert {
+        font-family: 'Lato', sans-serif;
+        color: #ffffff;
+        background-color: #333333;
+        max-width: 230px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: -4%;
+        margin-left: -7%;
+    } 
+
+    .menu-vert a {
+        width: 100%;
+        color: #ffffff;
+        background-color: #333333;
+        text-align: right;
+        padding: 15px 0px 10px 0px;
+    }
+
+    .menu-vert a:hover {
+        width: 110%;
+        color: #333333;
+        background-color: #c4c4c4; 
+        text-align: right;
+        padding: 15px 0px 10px 0px;
+        margin-left: -11.3px;
+
     }
 }
 
@@ -873,5 +883,112 @@ input[type="submit"] {
 
 @media screen and (max-width: 320px) { 
 
+    .logo-content {
+        width: 100%;
+        margin-left: 13%;
+    }
+    
+    .logo {
+        display: flex;
+        width: 8%;
+        margin-left: -4%;
+    }    
+
+    .texto-logo {
+        font-weight: bold;
+        font-size: 18.5px;
+        letter-spacing: 0.8px;
+        margin-top: 4.5%;
+        margin-left: 16%;
+        width: 320px;
+    }
+
+    .buttom-expand {
+        display: block;
+        width: 50px;
+        position: absolute;
+        margin-left: -26%;
+        margin-top: -6%;
+      } 
+
+    .menu-main:hover .menu-vert {
+        font-family: 'Lato', sans-serif;
+        color: #ffffff;
+        background-color: #333333;
+        max-width: 230px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: -10%;
+        margin-left: -88%;
+    } 
+
+    .nova-transacao {
+        width: 90%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5%;
+        margin-left: 2%;
+        border: none;
+    }
+    
+    .texto-nova-transacao {
+        padding: 10px;
+        width: 100%;
+        font-size: 17px;
+        font-weight: bolder;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .formulario label {
+        width: 160px;
+        margin-bottom: 10px;
+    }
+
+    .div-trans select {
+        width: 280px;
+        height: 40px;
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    .div-merc input {
+        width: 280px;
+        height: 38px;
+        display: flex;
+        margin-top: -2px;
+        margin-left: 3px;
+        margin-bottom: 15px;
+    }
+
+    .div-val input {
+        width: 280px;
+        height: 38px;
+        display: flex;
+        margin-top: -2px;
+        margin-left: 1px;
+        margin-bottom: 15px;
+    }
+    
+    input[type="submit"] {
+        margin-left: 1%;
+        width: 280px;
+    }
+
+    .hr-extrato {
+        display: block;
+        margin-top: 7%;
+        width: 90%;
+        height: 10px;
+    }
+
+    .extrato {
+        margin-top: 8%;
+
+    }
 }
 

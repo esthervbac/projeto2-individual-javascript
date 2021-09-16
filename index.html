@@ -9,21 +9,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="cabecalho">
-            <div class="logo-content">
-                <div class="logo">
-                    <img src="./assets/images/logo.png" />
+        <header> 
+            <div class="cabecalho">
+                <div class="logo-content">
+                    <div class="logo">
+                        <img src="./assets/images/logo.png" />
+                    </div>
+                    <div class="texto-logo">Controle financeiro</div>
                 </div>
-                <div class="texto-logo">Controle financeiro</div>
-            </div>
-            <div class="menu-main">
-                <div class="buttom-expand">
-                    <a href="#"><img src="./assets/images/menu.png" /></a>
-                </div>
-                <div class="menu menu-vert">
-                    <img class="fechar" src="./assets/images/fechar.png" />
-                    <a class="link1" href="#" >Limpar Dados</a>
-                    <a href="#" >Cadastro de Transações</a>
+                <div class="menu-main">
+                    <div class="buttom-expand">
+                        <a href="#"><img src="./assets/images/menu.png" /></a>
+                    </div>
+                    <div class="menu menu-vert">
+                        <img class="fechar" src="./assets/images/fechar.png" />
+                        <a class="link1" href="#" >Limpar Dados</a>
+                        <a href="#" >Cadastro de Transações</a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -34,7 +36,6 @@
                     <div class="div-form">
                         <div class="div-trans">
                             <label for="trans">Tipo de transação</label>
-                    
                             <select id="trans" name="trans">
                                 <option value="compra">Compra</option>
                                 <option value="venda">Venda</option>

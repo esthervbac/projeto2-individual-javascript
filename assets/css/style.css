@@ -508,7 +508,7 @@ header {
     }  
 
     .menu-main:hover .menu-vert {
-        padding: 0%;
+        padding: 0;
         width: 100%;
         font-family: 'Lato', sans-serif;
         color: #ffffff;
@@ -517,8 +517,7 @@ header {
         flex-direction: column;
         position: absolute;
         margin-top: -8%;
-        margin-left: -2.4%;
-        float: right;
+        margin-left: -3%;
     } 
 
     .menu-vert img {
@@ -797,7 +796,7 @@ header {
 
 
       .menu-main:hover .menu-vert {
-        margin-left: -13%;
+        margin-left: -17%;
         margin-top: -11%;
       }
 
@@ -875,14 +874,6 @@ header {
 
     }
 }
-
-@media screen and (max-width: 591px) and (min-width: 551px) {
-
-    .menu-main:hover .menu-vert {
-        float: right;
-        margin-left: 10px;
-      }
-} 
 
 @media screen and (max-width: 552px) { 
 

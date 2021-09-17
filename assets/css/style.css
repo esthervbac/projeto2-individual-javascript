@@ -517,7 +517,7 @@ header {
         flex-direction: column;
         position: absolute;
         margin-top: -8%;
-        margin-left: -3%;
+        margin-left: 0%;
     } 
 
     .menu-vert img {
@@ -563,7 +563,7 @@ header {
 
 @media screen and (max-width: 755px) {
     .menu-main:hover .menu-vert {
-        margin-left: -4%;
+        margin-left: 0%;
     } 
 }
 
@@ -583,8 +583,8 @@ header {
         display: flex;
         flex-direction: column;
         position: absolute;
-        margin-top: -10%;
-        margin-left: -3.5%;
+        margin-top: -8%;
+        margin-left: 0%;
     } 
 }
 
@@ -673,7 +673,7 @@ header {
       } 
 
       .menu-main:hover .menu-vert {
-        margin-left: -9.7%;
+        margin-left: -5%;
         margin-top: -9%;
     } 
 }
@@ -681,7 +681,7 @@ header {
 @media screen and (max-width: 640px) {
 
       .menu-main:hover .menu-vert {
-        margin-left: -10%;
+        margin-left: -6%;
         margin-top: -10%;
     } 
 }
@@ -796,8 +796,8 @@ header {
 
 
       .menu-main:hover .menu-vert {
-        margin-left: -17%;
-        margin-top: -11%;
+        margin-left: -8%;
+        margin-top: -10%;
       }
 
     .nova-transacao {
@@ -1016,8 +1016,8 @@ header {
       } 
 
       .menu-main:hover .menu-vert {
-        margin-left: -56.1%;
-        margin-top: -16%;
+        margin-left: -48.1%;
+        margin-top: -15%;
     } 
 
     .nova-transacao {
@@ -1060,7 +1060,7 @@ header {
       } 
 
       .menu-main:hover .menu-vert {
-        margin-left: -59.7%;
+        margin-left: -51.7%;
         margin-top: -16%;
     } 
 
@@ -1101,7 +1101,7 @@ header {
       } 
 
       .menu-main:hover .menu-vert {
-        margin-left: -62.4%;
+        margin-left: -53.4%;
         margin-top: -16%;
     } 
 
@@ -1152,7 +1152,7 @@ header {
       } 
 
       .menu-main:hover .menu-vert {
-        margin-left: -62.5%;
+        margin-left: -55.5%;
         margin-top: -18%;
     } 
 
@@ -1275,7 +1275,7 @@ header {
       } 
 
       .menu-main:hover .menu-vert {
-        margin-left: -69.4%;
+        margin-left: -60.4%;
         width: 200px;
         margin-top: -24%;
     } 

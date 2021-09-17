@@ -649,7 +649,7 @@ header {
       } 
 
       .menu-main:hover .menu-vert {
-        margin-left: -2.4%;
+        margin-left: -4.1%;
         margin-top: -11%;
     } 
 
@@ -806,7 +806,7 @@ header {
       } 
 
       .menu-main:hover .menu-vert {
-        margin-left: -53.4%;
+        margin-left: -56.1%;
         margin-top: -16%;
     } 
 
@@ -887,6 +887,57 @@ header {
     input[type="submit"] {
         margin-left: -11%;
         width: 330px;
+    }
+}
+
+@media screen and (max-width: 360px) { 
+
+    div.menu-main {
+        margin-left: 3%;
+    }
+
+    div.buttom-expand {
+        display: block;
+        width: 30px;
+        margin-left: -36%;
+        margin-top: 32%;
+      } 
+
+      .menu-main:hover .menu-vert {
+        margin-left: -62.5%;
+        margin-top: -18%;
+    } 
+
+    .nova-transacao {
+        width: 75%;
+    }
+
+    .div-form {
+        margin-left: -12%;
+
+    }
+
+    .div-trans select {
+        width: 300px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-merc input {
+        width: 300px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-val input {
+        width: 300px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
+    input[type="submit"] {
+        margin-left: -11%;
+        width: 300px;
     }
 }
 

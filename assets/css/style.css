@@ -276,8 +276,7 @@ header {
 
 /*****Media Queries*****/
 
-@media screen and (max-width: 963px) {
-
+@media screen and (max-width: 1005px) {
     .menu-main .menu {
         width: 70%;
         background-color: #ffffff;
@@ -288,25 +287,53 @@ header {
     }
 }
 
-@media screen and (max-width: 894px) {
+@media screen and (max-width: 963px) {
+
     .menu-main .menu {
-        width: 74%;
-        background-color: #ffffff;
-        padding: 12px;
+        width: 72%;
+        margin-top: 2%;
+        margin-left: 18%;
+    }
+}
+
+@media screen and (max-width: 907px) {
+
+    .menu-main .menu {
+        width: 73%;
+        margin-top: 2%;
+        margin-left: 16%;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    .menu-main .menu {
+        width: 76%;
         margin-top: 2%;
         margin-left: 15%;
-        text-align: center;
+    }    
+}
+
+@media screen and (max-width: 883px) {
+    .menu-main .menu {
+        width: 76%;
+        margin-top: 2%;
+        margin-left: 15%;
+    }    
+}
+
+@media screen and (max-width: 859px) {
+    .menu-main .menu {
+        width: 78%;
+        margin-top: 2%;
+        margin-left: 10%;
     }    
 }
 
 @media screen and (max-width: 846px) {
     .menu-main .menu {
         width: 80%;
-        background-color: #ffffff;
-        padding: 12px;
         margin-top: 2%;
         margin-left: 3%;
-        text-align: center;
     } 
 }
 
@@ -410,14 +437,19 @@ header {
     }
 }
 
-@media screen and (max-width: 783px) {
+@media screen and (max-width: 798px) {
     .menu-main .menu {
         width: 83%;
-        background-color: #ffffff;
-        padding: 12px;
         margin-top: 2%;
-        margin-left: 4%;
-        text-align: center;
+        margin-left: 0%;
+    } 
+}
+
+@media screen and (max-width: 769px) {
+    .menu-main .menu {
+        width: 85%;
+        margin-top: 2%;
+        margin-left: -6%;
     } 
 }
 
@@ -534,6 +566,27 @@ header {
     } 
 }
 
+@media screen and (max-width: 740px) {
+
+    div.texto-logo {
+        width: 200px; 
+        margin-top: 4.5%;
+        margin-left: 6%;
+    }
+
+    .menu-main:hover .menu-vert {
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        color: #ffffff;
+        background-color: #333333;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: -10%;
+        margin-left: -3.5%;
+    } 
+}
+
 @media screen and (max-width: 735px) {
     .texto-logo {
         margin-left: -25%;
@@ -608,7 +661,7 @@ header {
 
     div.texto-logo {
         width: 250px;
-        margin-left: 26%;
+        margin-left: 4%;
     }
 
     .buttom-expand {
@@ -619,35 +672,52 @@ header {
       } 
 
       .menu-main:hover .menu-vert {
-        margin-left: -9%;
+        margin-left: -9.7%;
         margin-top: -9%;
     } 
 }
 
 @media screen and (max-width: 640px) {
 
-    div.texto-logo {
-        width: 250px;
-        margin-left: 25%;
-    }
-
       .menu-main:hover .menu-vert {
-        margin-left: -9.6%;
+        margin-left: -10%;
         margin-top: -10%;
     } 
 }
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 633px) {
 
     .buttom-expand {
-        display: block;
-        width: 50px;
         margin-left: 50%;
         margin-top: 5%;
       } 
 
       .menu-main:hover .menu-vert {
-        margin-left: -4%;
+        margin-left: -10.3%;
+    } 
+
+    .div-trans select {
+        width: 115px;
+    }
+
+    .div-merc input {
+        width: 240px;
+    }
+
+    .div-val input {
+        width: 115px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+
+    .buttom-expand {
+        margin-left: 50%;
+        margin-top: 5%;
+    } 
+    
+    .menu-main:hover .menu-vert {
+        margin-left: -12.4%;
     } 
 
     .div-trans select {
@@ -668,7 +738,7 @@ header {
 
     div.texto-logo {
         width: 250px;
-        margin-left: 21%;
+        margin-left: 10%;
     }
 
     .buttom-expand {
@@ -680,7 +750,7 @@ header {
 
 
       .menu-main:hover .menu-vert {
-        margin-left: -12.4%;
+        margin-left: -17%;
         margin-top: -11%;
       }
 

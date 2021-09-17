@@ -604,24 +604,6 @@ header {
     }
 }
 
-@media screen and (max-width: 640px) {
-
-    div.texto-logo {
-        width: 250px;
-        margin-left: 25%;
-    }
-
-    .buttom-expand {
-        margin-left: 50%;
-        margin-top: 5%;
-      } 
-
-      .menu-main:hover .menu-vert {
-        margin-left: -9.6%;
-        margin-top: -10%;
-    } 
-}
-
 @media screen and (max-width: 653px) {
 
     div.texto-logo {
@@ -639,6 +621,19 @@ header {
       .menu-main:hover .menu-vert {
         margin-left: -9%;
         margin-top: -9%;
+    } 
+}
+
+@media screen and (max-width: 640px) {
+
+    div.texto-logo {
+        width: 250px;
+        margin-left: 25%;
+    }
+
+      .menu-main:hover .menu-vert {
+        margin-left: -9.6%;
+        margin-top: -10%;
     } 
 }
 
@@ -671,10 +666,9 @@ header {
 
 @media screen and (max-width: 600px) {
 
-    .texto-logo {
-        width: 90%;
-        margin-top: 7%;
-        margin-left: -12%;
+    div.texto-logo {
+        width: 250px;
+        margin-left: 21%;
     }
 
     .buttom-expand {
@@ -684,10 +678,11 @@ header {
         margin-top: 5%;
       } 
 
+
       .menu-main:hover .menu-vert {
-        margin-left: -4.1%;
+        margin-left: -12.4%;
         margin-top: -11%;
-    } 
+      }
 
     .nova-transacao {
         width: 90%;
@@ -1101,8 +1096,9 @@ header {
       } 
 
       .menu-main:hover .menu-vert {
-        margin-left: -69.9%;
-        margin-top: -23%;
+        margin-left: -69.4%;
+        width: 200px;
+        margin-top: -24%;
     } 
 
     .nova-transacao {

@@ -269,6 +269,11 @@ header {
     justify-content: space-between;
 }
 
+.semtrans {
+    text-align: center;
+    font-weight: bold;
+}
+
 .lucro {
     font-size: 10px;
     font-weight:lighter;

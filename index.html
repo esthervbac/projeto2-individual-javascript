@@ -25,7 +25,7 @@
                     <div class="menu menu-vert">
                         <img class="fechar" src="./assets/images/fechar.png" />
                         <a class="link1" href="#" >Limpar Dados</a>
-                        <a href="#" >Cadastro de Transações</a>
+                        <a id="goHome" href="#" >Cadastro de Transações</a>
                     </div>
                 </div>
             </div>
@@ -33,24 +33,24 @@
         <div class="content">
             <div class="nova-transacao">
                 <span class="texto-nova-transacao">Nova transação</span>
-                <form class="formulario" name="formul">
+                <form class="formulario" name="formul" onsubmit="testaValor(event);">
                     <div class="div-form">
                         <div class="div-trans">
                             <label for="trans">Tipo de transação</label>
-                            <select id="trans" name="trans">
-                                <option value="compra">Compra</option>
-                                <option value="venda">Venda</option>
+                            <select id="trans" name="trans" required>
+                                <option value="compra" id="compra">Compra</option>
+                                <option value="venda" id="venda">Venda</option>
                             </select>
                         </div>
                         <div class="div-merc">
                             <label for="nome-merc" class="mercad">Nome da mercadoria</label>
                     
-                            <input type="text" id="nome-merc" class="nome-mercad" name="nome-merc" placeholder="Input" />
+                            <input type="text" id="nome-merc" class="nome-mercad" name="nome-merc" placeholder="Nome da Mercadoria" onfocus="this.value = ''" required />
                         </div>
                         <div class="div-val">
                             <label for="valor">Valor</label>
                    
-                            <input type="text" id="valor" name="valor" class="valor1" placeholder="R$ 0,00" />
+                            <input type="text" id="valor" name="valor" class="valor valorVenda valorCompra" placeholder="R$ 0,00" onkeypress="testaCampoValor(event)" onkeyup="formatarMoeda();" required />
                         </div>
                     </div>
                     <div class="div-input">
@@ -63,14 +63,16 @@
             </div>
             <div class="extrato">
                 <div class="texto-extr-trans">Extrato de transações</div>
-                <div class="linha">
-                    <div class="linha-sep"></div>
-                    <div class="sep-texto">
-                        <div class="linha-texto-merc">Mercadoria</div>
-                        <div class="linha-texto-val">Valor</div>
+                    <div class="linha">
+                        <div class="linha-sep"></div>
+                        <div class="sep-texto">
+                            <div class="linha-texto-merc">Mercadoria</div>
+                            <div class="linha-texto-val">Valor</div>
+                        </div>
                     </div>
+                    <hr>
+                <div class="semtrans" id="semtrans" name="semtrans">Nenhuma Transação Cadastrada
                 </div>
-                <hr>
                 <div class="linha1">
                     <div class="sinalmais">+</div>
                     <div class="linha1-sep">
@@ -108,5 +110,6 @@
             </div>
         </div>
     <script src="./assets/js/cadastro.js"></script>
+    <script src="./assets/js/extrato.js"></script>
     </body>
 </html>

@@ -1,0 +1,1331 @@
+/*****CSS Padrão da Página*****/
+
+body {
+    width: 100%;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    color:  #121212;
+}
+
+hr {
+    width: 98%;
+}
+
+.hrbaixo {
+    margin-top: -0.8%;
+}
+
+.hr-extrato {
+    display: none;
+}
+
+/*****Formulário*****/
+
+.formulario {
+    width: 100%;
+}
+
+.formulario label {
+    font-size: 14px;
+    margin: 4%;
+    letter-spacing: 1px;
+}
+
+.formulario select {
+    margin-left: 4%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+select {
+    width: 92%;
+    height: 35px;
+    border: solid 1px #979797;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 14px;
+    color: #979797;
+    padding-left: 10px;
+}
+
+.formulario select option {
+    padding-left: 10px;
+}
+
+.formulario input {
+    margin-left: 4%;
+    margin-top: 2%;
+    margin-bottom: 3%;   
+}
+
+input {
+    width: 90%;
+    height: 35px;    
+    border: solid 1px #979797;
+    border-radius: 5px;
+}
+
+input[type="text"]::placeholder {
+    padding-left: 10px;
+    font-size: 14px;
+    color: #979797;
+}
+
+input[type="submit"] {
+    background-color: #333333;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+/*****Cabeçalho*****/
+
+header {
+    width: 100%;
+    background-color: #e0e0e0;
+}
+
+.cabecalho {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cabecalho div {
+    width: 50%;
+}
+
+.logo-content {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 3%;
+}
+
+.logo {
+    width: 10%;
+}
+
+.texto-logo {
+    width: 40%;
+    font-weight: bold;
+    font-size: 18.5px;
+    letter-spacing: 0.8px;
+    margin-top: 4%;
+    margin-left: -32%;
+}
+
+/*****Menu*****/
+
+.buttom-expand {
+    display: none;
+}
+
+.menu-main {
+    width: 50%;
+}
+
+.menu-main .menu {
+    width: 65%;
+    background-color: #ffffff;
+    padding: 12px;
+    margin-top: 2%;
+    margin-left: 26%;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #121212;
+}  
+
+.menu .link1::after {
+    content: " | ";
+    padding: 15px;
+}
+
+.menu img {
+    display: none;
+}
+
+/*****Content*****/
+
+.content {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
+/*****Área Nova Transação*****/
+
+.nova-transacao {
+    width: 40%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    border: solid 1px #979797;
+    border-radius: 5px;
+    margin-top: 2.5%;
+    margin-left: 2%;
+}
+
+.texto-nova-transacao {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: bolder;
+    margin-left: 35%;
+    margin-bottom: 3%;
+}
+
+/*****Área Extrato*****/
+
+.extrato {
+    width: 60%;
+    color: black;
+    margin-top: -4%;
+    align-items: center;    
+    justify-content: center;
+    font-size: 13.5px;
+    margin-left: 2%;
+}
+
+.texto-extr-trans {
+    width: 50%;
+    height: 50%;
+    font-size: 16.5px;
+    font-weight: bolder;
+    margin-left: 35%;
+    margin-bottom: 3%;
+}
+
+.linha, .linha1, .linha2, .linha3, .linha4 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.linha1-sep, .linha2-sep, .linha3-sep {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.linha-texto-merc {
+    padding-right: 50%;
+    font-weight: bold;
+}
+
+.linha-texto-merc, .linha1-texto-merc, .linha2-texto-merc, .linha3-texto-merc, .linha4-texto-total {
+    margin-left: -2%;
+}
+
+.linha-texto-val, .linha4-texto-total, .linha4-texto-val {
+    font-weight: bold;
+}
+
+.linha-texto-val, .linha1-texto-val, .linha2-texto-val, .linha3-texto-val, .linha4-texto-val, .lucro {
+    text-align: right;
+    margin-right: 4%;
+}
+
+.linha4-sep {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.linha1-texto-merc {
+    width: 30%;
+    text-align: left;
+    padding-right: 10%;
+}
+
+.linha-sep, .sinalmais, .sinalmenos, .sep {
+    width: 5%;
+    justify-content: center;
+    margin-left: 2%;
+    margin-bottom: 0.5%;
+}
+
+.sep-texto, .sep-total {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.semtrans {
+    text-align: center;
+    font-weight: bold;
+}
+
+.lucro {
+    font-size: 10px;
+    font-weight:lighter;
+}
+
+/*****Media Queries*****/
+
+@media screen and (max-width: 1005px) {
+    .menu-main .menu {
+        width: 70%;
+        background-color: #ffffff;
+        padding: 12px;
+        margin-top: 2%;
+        margin-left: 21%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 963px) {
+
+    .menu-main .menu {
+        width: 72%;
+        margin-top: 2%;
+        margin-left: 18%;
+    }
+}
+
+@media screen and (max-width: 907px) {
+
+    .menu-main .menu {
+        width: 73%;
+        margin-top: 2%;
+        margin-left: 16%;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    .menu-main .menu {
+        width: 76%;
+        margin-top: 2%;
+        margin-left: 15%;
+    }    
+}
+
+@media screen and (max-width: 883px) {
+    .menu-main .menu {
+        width: 76%;
+        margin-top: 2%;
+        margin-left: 15%;
+    }    
+}
+
+@media screen and (max-width: 859px) {
+    .menu-main .menu {
+        width: 78%;
+        margin-top: 2%;
+        margin-left: 10%;
+    }    
+}
+
+@media screen and (max-width: 846px) {
+    .menu-main .menu {
+        width: 80%;
+        margin-top: 2%;
+        margin-left: 3%;
+    } 
+}
+
+@media screen and (max-width: 806px) {
+
+    .content {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0%;
+        max-width: 1100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nova-transacao {
+        max-width: 1100px;
+        width: 90%;
+        height: 220px;
+    }
+
+    .texto-nova-transacao { 
+        text-align: center;
+        margin-left: 0%;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .div-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%; 
+    }
+
+    .div-trans {
+        display: flex;
+        flex-direction: column;
+        width: 25%; 
+    }
+
+    .div-trans select {
+        width: 160px;
+        height: 40px;
+        display: flex;
+    }
+
+    label.mercad {
+        margin-top: 7px;
+    }
+
+    .div-merc {
+        display: flex;
+        width: 50%; 
+        flex-direction: column;
+    }
+
+    .div-merc input {
+        width: 330px;
+        height: 38px;
+        display: flex;
+        margin-top: -5px;
+        margin-left: 3px;
+    }
+
+    .div-val {
+        width: 25%; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-val input {
+        width: 160px;
+        height: 38px;
+        display: flex;
+        margin-top: 2px;
+        margin-left: 1px;
+    }
+
+    input[type="submit"] {
+        width: 28%;
+        margin-left: 70%;
+        margin-top: 2%;
+    }
+
+    .extrato {
+        max-width: 1100px;
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    .texto-extr-trans {
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .menu-main .menu {
+        width: 83%;
+        margin-top: 2%;
+        margin-left: 0%;
+    } 
+}
+
+@media screen and (max-width: 769px) {
+    .menu-main .menu {
+        width: 85%;
+        margin-top: 2%;
+        margin-left: -6%;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+
+    .cabecalho {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo-content {
+        width: 100%;
+        margin-left: 13%;
+    }
+    
+    .logo {
+        display: flex;
+        margin-left: -17%;
+    }    
+
+    .texto-logo {
+        font-weight: bold;
+        font-size: 18.5px;
+        letter-spacing: 0.8px;
+        margin-top: 4.5%;
+        margin-left: 15%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .buttom-expand {
+        display: block;
+        width: 50px;
+        margin-left: 50%;
+        margin-top: 5%;
+      } 
+
+    .menu-main {
+        background-color: transparent;
+        max-width: 230px;
+        width: 100%;
+        margin-left: 6%;
+        
+    }
+
+    .menu-vert {
+        max-width: 230px;
+        width: 100%;
+        height: 100vh;  
+        display: none;
+    }  
+
+    .menu-main:hover .menu-vert {
+        padding: 0;
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        color: #ffffff;
+        background-color: #333333;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: -8%;
+        margin-left: 0%;
+    } 
+
+    .menu-vert img {
+        display: block;
+        width: 56px;
+        height: 51px;
+        text-align: left;
+        padding: 0px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .menu-vert a {
+        display: block;
+        color: #ffffff;
+        background-color: #333333;
+        text-align: right;
+        padding: 15px;
+    }
+
+    .menu-vert a:hover {
+        color: #333333;
+        background-color: #c4c4c4; 
+
+    }
+
+    .menu-vert .link1::after {
+       display: none;
+    }
+
+    .div-trans select {
+        width: 145px;
+    }
+
+    .div-merc input {
+        width: 300px;
+    }
+
+    .div-val input {
+        width: 145px;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    .menu-main:hover .menu-vert {
+        margin-left: 0%;
+    } 
+}
+
+@media screen and (max-width: 740px) {
+
+    div.texto-logo {
+        width: 200px; 
+        margin-top: 4.5%;
+        margin-left: 6%;
+    }
+
+    .menu-main:hover .menu-vert {
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        color: #ffffff;
+        background-color: #333333;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: -8%;
+        margin-left: 0%;
+    } 
+}
+
+@media screen and (max-width: 735px) {
+    .texto-logo {
+        margin-left: -25%;
+    }
+
+    .buttom-expand {
+        display: block;
+        width: 50px;
+        margin-left: 50%;
+        margin-top: 5%;
+      } 
+
+      .menu-main:hover .menu-vert {
+        margin-left: -4%;
+    } 
+}
+
+@media screen and (max-width: 725px) {
+
+    .buttom-expand {
+        display: block;
+        width: 50px;
+        margin-left: 50%;
+        margin-top: 5%;
+      } 
+
+      .menu-main:hover .menu-vert {
+        margin-left: -4%;
+    } 
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .buttom-expand {
+        display: block;
+        width: 50px;
+        margin-left: 50%;
+        margin-top: 5%;
+      } 
+
+      .menu-main:hover .menu-vert {
+        margin-left: -4%;
+    } 
+}
+
+@media screen and (max-width: 700px) {
+
+    .buttom-expand {
+        margin-left: 50%;
+        margin-top: 5%;
+      } 
+
+      .menu-main:hover .menu-vert {
+        margin-left: -4%;
+    } 
+
+    .div-trans select {
+        width: 130px;
+    }
+
+    .div-merc input {
+        width: 270px;
+    }
+
+    .div-val input {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 653px) {
+
+    div.texto-logo {
+        width: 250px;
+        margin-left: 4%;
+    }
+
+    .buttom-expand {
+        display: block;
+        width: 50px;
+        margin-left: 50%;
+        margin-top: 5%;
+      } 
+
+      .menu-main:hover .menu-vert {
+        margin-left: -5%;
+        margin-top: -9%;
+    } 
+}
+
+@media screen and (max-width: 640px) {
+
+      .menu-main:hover .menu-vert {
+        margin-left: -6%;
+        margin-top: -10%;
+    } 
+}
+
+@media screen and (max-width: 633px) {
+
+    .buttom-expand {
+        margin-left: 50%;
+        margin-top: 5%;
+      } 
+
+      .menu-main:hover .menu-vert {
+        margin-left: -10.3%;
+    } 
+
+    .div-trans select {
+        width: 115px;
+    }
+
+    .div-merc input {
+        width: 240px;
+    }
+
+    .div-val input {
+        width: 115px;
+    }
+}
+
+@media screen and (max-width: 628px) and (min-width: 626px) { 
+
+	.menu-main:hover .menu-vert {
+        margin-left: -10.5%;
+    } 
+}
+
+@media screen and (max-width: 625px) {
+
+    .buttom-expand {
+        margin-left: 50%;
+        margin-top: 5%;
+    } 
+    
+    .menu-main:hover .menu-vert {
+        margin-left: -12.4%;
+    } 
+
+    .div-trans select {
+        width: 115px;
+    }
+
+    .div-merc input {
+        width: 240px;
+    }
+
+    .div-val input {
+        width: 115px;
+    }
+}
+
+@media screen and (max-width: 618px) and (min-width: 601px) {
+	
+    .div-trans {
+        display: flex;
+        width: 30%; 
+        margin-top: 0%;
+    }
+    
+	.div-trans select {
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+    
+    label.mercad {
+       margin-left: -3%;
+    }
+
+    .div-merc {
+        display: flex;
+    }
+
+    .div-merc input {
+        display: flex;
+        margin-top: -2%;
+        margin-left: -5%;
+    }
+
+    .div-val {
+        width: 25%; 
+        display: flex;
+    }
+
+    .div-val input {
+        display: flex;
+        margin-top: 1%;
+        margin-left: -5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    div.texto-logo {
+        width: 250px;
+        margin-left: 10%;
+    }
+
+    .buttom-expand {
+        display: block;
+        width: 50px;
+        margin-left: 50%;
+        margin-top: 5%;
+      } 
+
+
+      .menu-main:hover .menu-vert {
+        margin-left: -8%;
+        margin-top: -10%;
+      }
+
+    .nova-transacao {
+        width: 90%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5%;
+        margin-left: 2%;
+        border: none;
+    }
+    
+    .texto-nova-transacao {
+        padding: 10px;
+        width: 100%;
+        font-size: 17px;
+        font-weight: bolder;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .formulario label {
+        width: 160px;
+    }
+
+    .div-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-trans select {
+        width: 500px;
+        height: 40px;
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    label.mercad {
+        margin-left: 5px;
+    }
+
+    .div-merc input {
+        width: 500px;
+        height: 38px;
+        display: flex;
+        margin-top: -5px;
+        margin-left: 3px;
+        margin-bottom: 15px;
+    }
+
+    .div-val input {
+        width: 500px;
+        height: 38px;
+        display: flex;
+        margin-top: 2px;
+        margin-left: 1px;
+        margin-bottom: 15px;
+    }
+    
+    input[type="submit"] {
+        margin-left: 1%;
+        width: 500px;
+    }
+
+    .hr-extrato {
+        display: block;
+        margin-top: 7%;
+        width: 90%;
+        height: 10px;
+    }
+
+    .extrato {
+        margin-top: 8%;
+
+    }
+}
+
+@media screen and (max-width: 552px) { 
+
+    div.logo-content {
+        width: 75%;
+        margin-left: 11%;
+    }
+
+    div.texto-logo {
+        margin-top: 6%;
+        margin-left: 15%;
+        width: 250px;
+    }
+
+    div.buttom-expand {
+        display: block;
+        width: 30px;
+        margin-left: 52%;
+        margin-top: 10%;
+      } 
+
+
+      .menu-main:hover .menu-vert {
+        margin-left: -26%;
+        margin-top: -12%;
+    } 
+
+    .div-form {
+        width: 80%;
+        margin-left: 2%;
+
+    }
+
+    .div-trans select {
+        width: 450px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-merc input {
+        width: 450px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-val input {
+        width: 450px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
+    input[type="submit"] {
+        margin-left: 3%;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 541px) and (min-width: 426px) {
+    div.logo-content {
+        width: 60%;
+        margin-left: 11%;
+
+    }
+
+    div.texto-logo {
+        margin-left: -4%;
+        width: 200px;
+    }
+    
+    div.menu-main {
+    	width: 20%;
+    }
+
+    div.buttom-expand {
+    	width: 20px;
+        margin-left: 20%;
+      } 
+
+      .menu-main:hover .menu-vert {
+        width: 200px;
+        margin-left: -32%;
+        margin-top: -15%;
+    } 
+
+    .div-form {
+        width: 60%;
+        margin-left: 0%;
+
+    }
+    
+    .texto-nova-transacao {
+    	width: 60%;
+    	margin-left: auto;
+        margin-right: auto;
+    	margin-bottom: 3%;
+}
+
+    .div-trans select {
+        width: 350px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-merc input {
+        width: 350px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-val input {
+        width: 350px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
+    input[type="submit"] {
+        margin-left: 1%;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 425px) { 
+
+    div.logo-content {
+        width: 75%;
+        margin-left: 11%;
+    }
+
+    div.texto-logo {
+        margin-top: 6%;
+        margin-left: -2%;
+        width: 250px;
+    }
+
+    div.buttom-expand {
+        display: block;
+        width: 30px;
+        margin-left: -60%;
+        margin-top: 32%;
+      } 
+
+      .menu-main:hover .menu-vert {
+        margin-left: -48.1%;
+        margin-top: -15%;
+    } 
+
+    .nova-transacao {
+        width: 80%;
+    }
+
+    .div-form {
+        margin-left: -4%;
+
+    }
+
+    .div-trans select {
+        width: 350px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-merc input {
+        width: 350px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-val input {
+        width: 350px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
+    input[type="submit"] {
+        margin-left: -3%;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 390px) { 
+
+    div.buttom-expand {
+        margin-left: -60%;
+      } 
+
+      .menu-main:hover .menu-vert {
+        margin-left: -51.7%;
+        margin-top: -16%;
+    } 
+
+    .div-form {
+        margin-left: -10%;
+
+    }
+
+    .div-trans select {
+        width: 330px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-merc input {
+        width: 330px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-val input {
+        width: 330px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
+    input[type="submit"] {
+        margin-left: -9%;
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 375px) { 
+
+    div.buttom-expand {
+        margin-left: -80%;
+        margin-top: 32%;
+      } 
+
+      .menu-main:hover .menu-vert {
+        margin-left: -53.4%;
+        margin-top: -16%;
+    } 
+
+    .nova-transacao {
+        width: 75%;
+    }
+
+    .div-form {
+        margin-left: -12%;
+
+    }
+
+    .div-trans select {
+        width: 330px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-merc input {
+        width: 330px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-val input {
+        width: 330px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
+    input[type="submit"] {
+        margin-left: -11%;
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 360px) { 
+
+    div.menu-main {
+        margin-left: 3%;
+    }
+
+    div.buttom-expand {
+        display: block;
+        width: 30px;
+        margin-left: -36%;
+        margin-top: 32%;
+      } 
+
+      .menu-main:hover .menu-vert {
+        margin-left: -56%;
+        margin-top: -18%;
+    } 
+
+    .nova-transacao {
+        width: 75%;
+    }
+
+    .div-form {
+        margin-left: -12%;
+
+    }
+
+    .div-trans select {
+        width: 300px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-merc input {
+        width: 300px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-val input {
+        width: 300px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
+    input[type="submit"] {
+        margin-left: -11%;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 320px) { 
+
+    div.menu-main {
+        margin-left: 4%;
+    }
+
+    div.texto-logo {
+        margin-top: 6%;
+        margin-left: -8%;
+        width: 250px;
+    }
+
+    div.buttom-expand {
+        display: block;
+        width: 30px;
+        margin-left: -62%;
+        margin-top: 32%;
+      } 
+
+      .menu-main:hover .menu-vert {
+        margin-left: -72.4%;
+        margin-top: -18%;
+    } 
+
+    .nova-transacao {
+        width: 75%;
+    }
+
+    .div-form {
+        margin-left: -12%;
+
+    }
+
+    .div-trans select {
+        width: 280px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-merc input {
+        width: 280px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-val input {
+        width: 280px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
+    input[type="submit"] {
+        margin-left: -11%;
+        width: 280px;
+    }
+
+    .hr-extrato {
+        display: block;
+        margin-top: 7%;
+        width: 90%;
+        height: 10px;
+    }
+
+    .extrato {
+        margin-top: 8%;
+
+    }
+}
+
+@media screen and (max-width: 280px) { 
+
+    div.menu-main {
+        margin-left: -1%;
+    }
+
+    div.texto-logo {
+        margin-top: 6%;
+        margin-left: 2%;
+        width: 130px;
+    }
+
+    div.buttom-expand {
+        margin-left: -24%;
+      } 
+
+      .menu-main:hover .menu-vert {
+        margin-left: -60.4%;
+        width: 200px;
+        margin-top: -24%;
+    } 
+
+    .nova-transacao {
+        width: 75%;
+    }
+
+    .div-form {
+        margin-left: -15%;
+
+    }
+
+    .div-trans select {
+        width: 250px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-merc input {
+        width: 250px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .div-val input {
+        width: 250px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
+    input[type="submit"] {
+        margin-left: -13%;
+        width: 250px;
+    }
+
+    .hr-extrato {
+        display: block;
+        margin-top: 7%;
+        width: 90%;
+        height: 10px;
+    }
+
+    .extrato {
+        margin-top: 8%;
+
+    }
+}

@@ -210,7 +210,7 @@ header {
     margin-bottom: 3%;
 }
 
-.linha, .linha1, .linha2, .linha3, .linha4 {
+.linha, .linha4 {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -229,15 +229,55 @@ header {
     font-weight: bold;
 }
 
-.linha-texto-merc, .linha1-texto-merc, .linha2-texto-merc, .linha3-texto-merc, .linha4-texto-total {
+.linha-texto-merc {
+    margin-left: 0%;
+}
+
+.linha4-texto-total {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+li {
+    width: 100%;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    margin-left: -4%;
+    margin-top: -3%;
+    display: flex;
+    }
+
+.hrspan {
+    width: 104%;
+    height: 1px;
     margin-left: -2%;
 }
 
-.linha-texto-val, .linha4-texto-total, .linha4-texto-val {
+.operadores {
+    width: 3%;
+    margin-left: -120%;
+    margin-top: 17px;
+}
+
+.linha1-texto-merc {
+    width: 57%;
+    padding-left: 0%;
+    margin-top: 3%;
+}
+
+span#valor1.linha1-texto-val {
+    width: 40%;
+    text-align: right;
+    margin-top: 3%;
+}
+
+.linha-texto-val, .linha4-texto-total {
     font-weight: bold;
 }
 
-.linha-texto-val, .linha1-texto-val, .linha2-texto-val, .linha3-texto-val, .linha4-texto-val, .lucro {
+.linha-texto-val, .lucro {
     text-align: right;
     margin-right: 4%;
 }
@@ -249,13 +289,7 @@ header {
     justify-content: right;
 }
 
-.linha1-texto-merc {
-    width: 30%;
-    text-align: left;
-    padding-right: 10%;
-}
-
-.linha-sep, .sinalmais, .sinalmenos, .sep {
+.linha-sep, .sep {
     width: 5%;
     justify-content: center;
     margin-left: 2%;
@@ -274,9 +308,15 @@ header {
     font-weight: bold;
 }
 
+.linha4-texto-val {
+    text-align: right;
+    margin-right: 3%;
+    width: 100%;
+}
+
 .lucro {
+    color: #000;
     font-size: 10px;
-    font-weight:lighter;
 }
 
 /*****Media Queries*****/

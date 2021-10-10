@@ -11,6 +11,10 @@ hr {
     width: 98%;
 }
 
+.hremcima {
+    margin-top: -7px;
+}
+
 .hrbaixo {
     margin-top: -0.8%;
 }
@@ -154,30 +158,35 @@ header {
 /*****Content*****/
 
 .content {
-    width: 100%;
+    width: 1100px;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0%;
-    max-width: 1100px;
-    display: flex;
+    display: inline;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     justify-content: center;
+    padding-top: 30px;
+}
+
+.empurrar {
+    height: 30px;
 }
 
 /*****Área Nova Transação*****/
 
 .nova-transacao {
-    width: 40%;
+    width: 400px;
     height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: top;
     border: solid 1px #979797;
     border-radius: 5px;
-    margin-top: 2.5%;
-    margin-left: 2%;
+    margin-top: 0%;
+    margin-left: 9%;
 }
 
 .texto-nova-transacao {
@@ -192,13 +201,16 @@ header {
 /*****Área Extrato*****/
 
 .extrato {
-    width: 60%;
+    width: 680px;
+    display: block;
     color: black;
-    margin-top: -4%;
-    align-items: center;    
+    margin-top: -27.3%;
+    align-items: center;
     justify-content: center;
     font-size: 13.5px;
-    margin-left: 2%;
+    margin-right: 7%;
+    padding-top: 30px;
+    float: right;
 }
 
 .texto-extr-trans {
@@ -306,6 +318,7 @@ span#valor1.linha1-texto-val {
 .semtrans {
     text-align: center;
     font-weight: bold;
+    margin-top: -17px;
 }
 
 .linha4-texto-val {
@@ -317,6 +330,15 @@ span#valor1.linha1-texto-val {
 .lucro {
     color: #000;
     font-size: 10px;
+    display: none;
+}
+
+.esconder {
+    display: none;
+}
+
+.aparecer {
+    display: block;
 }
 
 /*****Media Queries*****/

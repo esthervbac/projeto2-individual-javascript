@@ -53,26 +53,25 @@
 
     const pegueTotal = valoresDeTransacoes => valoresDeTransacoes
         .reduce((acumulador, transacao) => acumulador + transacao, 0)
-        .toLocaleString('pt-BR', {
-            currency: 'BRL',
-            style: 'currency',
-            minimumFractionDigits: 2});
+        .toFixed(2)
 
     const atualizarValoresTotais = () => {
         const valoresDeTransacoes = transacoes.map(({ valor }) => valor)
         const total = pegueTotal(valoresDeTransacoes)
+       
     /*  Se precisar jogar valores de Compras e Vendas
         const vendas  = pegueVendas(valoresDeTransacoes)
         const compras = pegueCompras(valoresDeTransacoes) 
         */
         
-        totalAtualizado.textContent = `${total}`
+        totalAtualizado.textContent = `R$ ${total}`
 
-        if (totalAtualizado > 0) {
+        if (total > 0) {
             lucroPrejuizo.textContent = `[LUCRO]` 
         } else {
             lucroPrejuizo.textContent = `[PREJUÍZO]`  
         }
+
     }
 
     const inicio = () => {
@@ -179,24 +178,21 @@
         valor = valor + '';
         valor = parseFloat(valor.replace(/[\D]+/g, ''));
         valor = valor + '';
-        valor = valor.replace(/([0-9]{2})$/g, ".$1");
+        valor = valor.replace(/([0-9]{2})$/g, ".$1"); 
 
         if (valor.length > 6) {
-            valor = valor.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1,$2");
+            valor = valor.replace(/([0-9]{3}),([0-9]{2}$)/g, "$1,$2");
         }
 
         let escolhendoVenda = document.querySelector('#venda').text;
-        let selected_options = document.querySelector('#trans').selectedOptions;
+        let opcoesSelecionadas = document.querySelector('#trans').selectedOptions;
     
-        for(i=0; i<selected_options.length; i++)
-        if (selected_options[i].text !== escolhendoVenda) {
-            elemento.value = '-' + valor;
+        for(i=0; i<opcoesSelecionadas.length; i++)
+        if (opcoesSelecionadas[i].text !== escolhendoVenda) {
+            elemento.value = '-' + valor
             console.log('compra -')
         } else {
-            elemento.value = valor;
+            elemento.value = valor
             console.log('venda +')
-        }
-        if (valor == 'NaN') {
-            elemento.value = '';
         }
     }

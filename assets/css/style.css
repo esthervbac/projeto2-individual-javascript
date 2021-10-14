@@ -343,6 +343,269 @@ span#valor1.linha1-texto-val {
 
 /*****Media Queries*****/
 
+@media screen and (max-width: 2560px) {
+    .nova-transacao {
+        width: 400px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        border: solid 1px #979797;
+        border-radius: 5px;
+        margin-top: 0%;
+        margin-left: 28%;
+    }
+
+    .extrato {
+        width: 680px;
+        display: block;
+        color: black;
+        margin-top: -14.5%;
+        align-items: center;
+        justify-content: center;
+        font-size: 13.5px;
+        margin-right: 29%;
+        padding-top: 30px;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .nova-transacao {
+        width: 400px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        border: solid 1px #979797;
+        border-radius: 5px;
+        margin-top: 0%;
+        margin-left: 24%;
+    }
+
+    .extrato {
+        max-width: 680px;
+        width: 50%;
+        display: block;
+        color: black;
+        margin-top: -19.5%;
+        align-items: center;
+        justify-content: center;
+        font-size: 13.5px;
+        margin-right: 19%;
+        padding-top: 30px;
+        float: right;
+    }
+
+    .texto-extr-trans {
+        width: 50%;
+        height: 50%;
+        font-size: 16.5px;
+        font-weight: bolder;
+        margin-left: 38%;
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .nova-transacao {
+        width: 400px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        border: solid 1px #979797;
+        border-radius: 5px;
+        margin-top: 0%;
+        margin-left: 11%;
+    }
+
+    .extrato {
+        width: 680px;
+        display: block;
+        color: black;
+        margin-top: -25.7%;
+        align-items: center;
+        justify-content: center;
+        font-size: 13.5px;
+        margin-right: 13%;
+        padding-top: 30px;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .nova-transacao {
+        width: 400px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        border: solid 1px #979797;
+        border-radius: 5px;
+        margin-top: 0%;
+        margin-left: 8%;
+    }
+
+    .extrato {
+        width: 680px;
+        display: block;
+        color: black;
+        margin-top: -27.2%;
+        align-items: center;
+        justify-content: center;
+        font-size: 13.5px;
+        margin-right: 12%;
+        padding-top: 30px;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 1334px) {
+    .nova-transacao {
+        width: 400px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        border: solid 1px #979797;
+        border-radius: 5px;
+        margin-top: 0%;
+        margin-left: 8%;
+    }
+    
+    .extrato {
+        max-width: 680px;
+        width: 48%;
+        display: block;
+        color: black;
+        margin-top: -27.2%;
+        align-items: center;
+        justify-content: center;
+        font-size: 13.5px;
+        margin-right: 10%;
+        padding-top: 30px;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .nova-transacao {
+        width: 400px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        border: solid 1px #979797;
+        border-radius: 5px;
+        margin-top: 0%;
+        margin-left: 6%;
+    }
+
+    .extrato {
+        width: 680px;
+        display: block;
+        color: black;
+        margin-top: -28.7%;
+        align-items: center;
+        justify-content: center;
+        font-size: 13.5px;
+        margin-right: 9%;
+        padding-top: 30px;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 1136px) {
+    .nova-transacao {
+        width: 400px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        border: solid 1px #979797;
+        border-radius: 5px;
+        margin-top: 0%;
+        margin-left: 9%;
+    }
+
+    .extrato {
+        max-width: 680px;
+        width: 50%;
+        display: block;
+        color: black;
+        margin-top: -32.7%;
+        align-items: center;
+        justify-content: center;
+        font-size: 13.5px;
+        margin-right: 4%;
+        padding-top: 30px;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 1076px) {
+    .extrato {
+        max-width: 680px;
+        width: 50%;
+        display: block;
+        color: black;
+        margin-top: -34.6%;
+        align-items: center;
+        justify-content: center;
+        font-size: 13.5px;
+        margin-right: 3%;
+        padding-top: 30px;
+        float: right;
+    }
+
+    .texto-extr-trans {
+        width: 50%;
+        height: 50%;
+        font-size: 16.5px;
+        font-weight: bolder;
+        margin-left: 35%;
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nova-transacao {
+        width: 400px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        border: solid 1px #979797;
+        border-radius: 5px;
+        margin-top: 0%;
+        margin-left: 5%;
+    }
+
+    .extrato {
+        max-width: 680px;
+        width: 50%;
+        display: block;
+        color: black;
+        margin-top: -36.1%;
+        align-items: center;
+        justify-content: center;
+        font-size: 13.5px;
+        margin-right: 2%;
+        padding-top: 30px;
+        float: right;
+    }
+
+    .texto-extr-trans {
+        width: 50%;
+        height: 50%;
+        font-size: 16.5px;
+        font-weight: bolder;
+        margin-left: 33%;
+        margin-bottom: 3%;
+    }
+}
+
 @media screen and (max-width: 1005px) {
     .menu-main .menu {
         width: 70%;
@@ -386,6 +649,36 @@ span#valor1.linha1-texto-val {
         margin-top: 2%;
         margin-left: 15%;
     }    
+
+    .extrato {
+        max-width: 680px;
+        width: 46%;
+        display: block;
+        color: black;
+        margin-top: -41.8%;
+        align-items: center;
+        justify-content: center;
+        font-size: 13.5px;
+        margin-right: 2%;
+        padding-top: 30px;
+        float: right;
+    }
+
+    .texto-extr-trans {
+        width: 50%;
+        height: 50%;
+        font-size: 16.5px;
+        font-weight: bolder;
+        margin-left: 35%;
+        margin-bottom: 3%;
+    }
+
+    .semtrans {
+        text-align: center;
+        font-weight: bold;
+        margin-top: -17px;
+        margin-left: 12%;
+    }
 }
 
 @media screen and (max-width: 859px) {
@@ -402,6 +695,84 @@ span#valor1.linha1-texto-val {
         margin-top: 2%;
         margin-left: 3%;
     } 
+}
+
+@media screen and (max-width: 883px) {
+    .menu-main .menu {
+        width: 76%;
+        margin-top: 2%;
+        margin-left: 15%;
+    }    
+
+    .extrato {
+        max-width: 680px;
+        width: 46%;
+        display: block;
+        color: black;
+        margin-top: -41.8%;
+        align-items: center;
+        justify-content: center;
+        font-size: 13.5px;
+        margin-right: 2%;
+        padding-top: 30px;
+        float: right;
+    }
+
+    .texto-extr-trans {
+        width: 50%;
+        height: 50%;
+        font-size: 16.5px;
+        font-weight: bolder;
+        margin-left: 35%;
+        margin-bottom: 3%;
+    }
+
+    .semtrans {
+        text-align: center;
+        font-weight: bold;
+        margin-top: -17px;
+        margin-left: 12%;
+    }
+}
+
+@media screen and (max-width: 844px) {
+    .menu-main .menu {
+        width: 76%;
+        margin-top: 2%;
+        margin-left: 15%;
+    }    
+
+    .nova-transacao {
+        width: 400px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        border: solid 1px #979797;
+        border-radius: 5px;
+        margin-top: 0%;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    .menu-main .menu {
+        width: 76%;
+        margin-top: 2%;
+        margin-left: 15%;
+    }    
+
+    .nova-transacao {
+        width: 400px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        border: solid 1px #979797;
+        border-radius: 5px;
+        margin-top: 0%;
+        margin-left: 3%;
+    }
 }
 
 @media screen and (max-width: 806px) {

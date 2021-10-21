@@ -51,11 +51,11 @@
                         <div class="div-val">
                             <label for="valor">Valor</label>
                    
-                            <input type="text" id="valor" name="valor" class="valor valorVenda valorCompra" placeholder="R$ 0,00" onfocus="this.value = ''" onkeyup="formatarMoeda()" onkeypress="testaCampoValor(event)" required />
+                            <input type="text" id="valor" name="valor" class="valor valorVenda valorCompra" placeholder="R$ 0,00" onkeypress="testaCampoValor(event)" onkeyup="formatarMoeda()" onfocus="this.value = ''" required />
                         </div>
                     </div>
                     <div class="div-input">
-                        <input type="submit" id="enviar" value="Adicionar transação" onclick="selecionarOpcoes()" />
+                        <input type="submit" id="enviar" value="Adicionar transação" />
                     </div>
                 </form>
             </div>

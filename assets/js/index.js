@@ -25,6 +25,7 @@
     const adicionarTransacoesReais = ({ valor, nome, id }) => {
         const operador = valor < 0 ? '-' : '+'
         const cssClass = valor < 0 ? 'sinalmenos' : 'sinalmais'
+       debugger
         const opcoesSelecao = valor < 0 ? 'compra' : 'venda'
         const valorSemOperador = Math.abs(valor).toLocaleString('pt-BR', {
             currency: 'BRL',
@@ -43,6 +44,7 @@
         `
         linha1Ul.append(li)
     }  
+   
 
     const pegueCompras = valoresDeTransacoes => Math.abs(valoresDeTransacoes
         .filter(valor => valor < 0)
@@ -61,7 +63,8 @@
     const atualizarValoresTotais = () => {
         const valoresDeTransacoes = transacoes.map(({ valor }) => valor)
         const total = pegueTotal(valoresDeTransacoes)
-        const totalFinal = total.replace(".", ",")
+        debugger 
+        const totalFinal = Number(total).toLocaleString()
        
     /*  Se precisar jogar valores de Compras e Vendas
         const vendas  = pegueVendas(valoresDeTransacoes)
@@ -131,10 +134,10 @@
         limparInputs()
     }
 
-    formulario.addEventListener('submit', lidarComFormEnviar)
+    formulario.addEventListener('submit', lidarComFormEnviar) 
 
-    /* Fazer divs de Nenhuma Transação Cadastrada e LucroPrejuízo aparecerem e desaparecerem 
-    nos momentos corretos */
+   // Fazer divs de Nenhuma Transação Cadastrada e LucroPrejuízo aparecerem e desaparecerem 
+  //  nos momentos corretos
 
     const botao = document.querySelector('#enviar');
     const divNadaCadastrado = document.querySelector('#semtrans');
@@ -152,7 +155,8 @@
       if (divOperadores && divMercadoria && divValor !== '' ) {
         document.getElementById("semtrans").style.display = "none";
         document.getElementById("lucro").style.display = "block";
-      }
+      }  
+
 
     /* Ao clicar no menu 'Limpar Dados' todos os dados do extrato são apagados */
 
@@ -166,6 +170,30 @@
         else
             return false;
     }
+
+
+ /*   function adicionarTransacoesReais ( valor, nome, id ) {
+        const operador = valor < 0 ? '-' : '+'
+        const cssClass = valor < 0 ? 'sinalmenos' : 'sinalmais'
+       debugger
+        const opcoesSelecao = valor < 0 ? 'compra' : 'venda'
+        const valorSemOperador = Math.abs(valor).toLocaleString('pt-BR', {
+            currency: 'BRL',
+            style: 'currency',
+            minimumFractionDigits: 2
+          })
+
+        const li = document.createElement('li')
+        li.classList.add(cssClass)
+        li.classList.add(opcoesSelecao)
+        li.innerHTML = `
+        <hr class="hrspan"></hr>
+        <span class="operadores" id="operadores">${operador}</span>
+        <span class="linha1-texto-merc" id="mercad1">${nome}</span>
+        <span class="linha1-texto-val" id="valor1"> ${valorSemOperador}</span>
+        `
+        linha1Ul.append(li)
+    } */
 
     function testaCampoValor(e) {
         e.preventDefault()
@@ -184,7 +212,7 @@
         valor = valor.replace(/[\D]+/g, '');
         valor = valor + '';
         valor = valor.replace(/([0-9]{2})$/g, ",$1"); 
-        valor = valor.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        valor = valor.replace (/\B(?=(\d{3})+(?!\d))/g, ".")
 
         let escolhendoVenda = document.querySelector('#venda').text;
         let opcoesSelecionadas = document.querySelector('#trans').selectedOptions;
@@ -198,6 +226,10 @@
                 valorInput.value = valor
 
             }
+    }
+
+    function formatarValorRealParaMaquina(valor) {
+        return parseFloat(valor.toString().replace('.', '').replace(',', '.'));
     }
 
        /*   let escolhendoVenda = document.querySelector('#venda').text;

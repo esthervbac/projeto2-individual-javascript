@@ -461,6 +461,22 @@ span#valor1.linha1-texto-val {
     }
 }
 
+@media screen and (max-width: 1336px) {
+
+    .extrato {
+        width: 680px;
+        display: block;
+        color: black;
+        margin-top: -27.2%;
+        align-items: center;
+        justify-content: center;
+        font-size: 13.5px;
+        margin-right: 10%;
+        padding-top: 30px;
+        float: right;
+    }
+}
+
 @media screen and (max-width: 1334px) {
     .nova-transacao {
         width: 400px;
@@ -603,6 +619,13 @@ span#valor1.linha1-texto-val {
         font-weight: bolder;
         margin-left: 33%;
         margin-bottom: 3%;
+    }
+
+    .semtrans {
+        text-align: center;
+        font-weight: bold;
+        margin-top: -17px;
+        margin-left: 0%; 
     }
 }
 
@@ -762,6 +785,12 @@ span#valor1.linha1-texto-val {
         margin-left: 15%;
     }    
 
+    .menu-main .menu {
+        width: 78%;
+        margin-top: 2%;
+        margin-left: 9%;
+    }
+
     .nova-transacao {
         width: 400px;
         height: 350px;
@@ -772,6 +801,20 @@ span#valor1.linha1-texto-val {
         border-radius: 5px;
         margin-top: 0%;
         margin-left: 3%;
+    }
+
+    .extrato {
+        max-width: 680px;
+        width: 44%;
+        display: block;
+        color: black;
+        margin-top: -41.8%;
+        align-items: center;
+        justify-content: center;
+        font-size: 13.5px;
+        margin-right: 2%;
+        padding-top: 30px;
+        float: right;
     }
 }
 
@@ -997,6 +1040,13 @@ span#valor1.linha1-texto-val {
     .div-val input {
         width: 145px;
     }
+
+    .semtrans {
+        text-align: center;
+        font-weight: bold;
+        margin-top: -17px;
+        margin-left: 0%;
+    }
 }
 
 @media screen and (max-width: 755px) {
@@ -1004,6 +1054,7 @@ span#valor1.linha1-texto-val {
         margin-left: 0%;
     } 
 }
+
 
 @media screen and (max-width: 740px) {
 
@@ -1311,6 +1362,13 @@ span#valor1.linha1-texto-val {
         margin-top: 8%;
 
     }
+
+    .semtrans {
+        text-align: center;
+        font-weight: bold;
+        margin-top: -17px;
+        margin-left: 0%;
+    }
 }
 
 @media screen and (max-width: 552px) { 
@@ -1491,6 +1549,22 @@ span#valor1.linha1-texto-val {
     }
 }
 
+@media screen and (max-width: 412px) { 
+
+    .texto-extr-trans {
+        width: 100%;
+        margin-left: 5%;
+        text-align: center;
+    }
+
+    .semtrans {
+        text-align: center;
+        font-weight: bold;
+        margin-top: -17px;
+        margin-left: 14%;
+    }
+}
+
 @media screen and (max-width: 390px) { 
 
     div.buttom-expand {
@@ -1574,6 +1648,10 @@ span#valor1.linha1-texto-val {
         margin-left: -11%;
         width: 330px;
     }
+
+    #linha1 {
+        margin-top: 10%;
+    }
 }
 
 @media screen and (max-width: 360px) { 
@@ -1624,6 +1702,32 @@ span#valor1.linha1-texto-val {
     input[type="submit"] {
         margin-left: -11%;
         width: 300px;
+    }
+
+    .texto-extr-trans {
+        width: 100%;
+        margin-left: 5%;
+        text-align: center;
+        padding-bottom: 10%;
+        margin-top: -10%;
+    }
+
+    .semtrans {
+        text-align: center;
+        font-weight: bold;
+        margin-top: -16%;
+        margin-left: 14%;
+    }
+
+    .sep-texto, .sep-total {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #linha1 {
+        margin-top: 16%;
     }
 }
 
@@ -1760,5 +1864,41 @@ span#valor1.linha1-texto-val {
     .extrato {
         margin-top: 8%;
 
+    }
+
+    .texto-extr-trans {
+        width: 100%;
+        margin-left: 5%;
+        text-align: center;
+        padding-bottom: 10%;
+        margin-top: -10%;
+    }
+
+    .sep-texto, .sep-total {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: -5%;
+        padding-top: -15px;
+    }
+
+    .semtrans {
+        text-align: center;
+        font-weight: bold;
+        margin-top: -17px;
+        margin-left: 7%;
+        padding-bottom: 15%;
+        margin-top: -18%;
+    }
+
+    .sep-texto, .sep-total {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 1%;
+        padding-bottom: -2%;
+        padding-top: 0%;
     }
 }

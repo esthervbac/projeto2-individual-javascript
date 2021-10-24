@@ -1584,13 +1584,18 @@ span#valor1.linha1-texto-val {
 
 @media screen and (max-width: 412px) { 
 
+    .menu-main:hover .menu-vert {
+        margin-left: -49%;
+        margin-top: -15%;
+    }
+
     .nova-transacao {
         width: 75%;
-        margin-top: -14%;
+        margin-top: -6%;
     }
 
     .extrato {
-        margin-top: -1%;
+        margin-top: 3%;
     }
 
     .texto-extr-trans {
@@ -1965,6 +1970,12 @@ span#valor1.linha1-texto-val {
 
 @media screen and (max-width: 280px) { 
 
+    .menu-main:hover .menu-vert {
+        margin-left: -53.4%;
+        width: 200px;
+        margin-top: -24%;
+    }
+
     div.menu-main {
         margin-left: -1%;
     }
@@ -1980,7 +1991,7 @@ span#valor1.linha1-texto-val {
       } 
 
       .menu-main:hover .menu-vert {
-        margin-left: -60.4%;
+        margin-left: -55.4%;
         width: 200px;
         margin-top: -24%;
     } 
@@ -1989,6 +2000,14 @@ span#valor1.linha1-texto-val {
         width: 75%;
         margin-top: -9%;
         margin-left: 15%;
+    }
+
+    .texto-extr-trans {
+        width: 100%;
+        margin-left: 5%;
+        text-align: center;
+        padding-bottom: 9%;
+        margin-top: -15%;
     }
 
     .div-form {
@@ -2027,7 +2046,7 @@ span#valor1.linha1-texto-val {
     }
 
     .extrato {
-        margin-top: 8%;
+        margin-top: 15%;
         width: 94%;
         margin-right: 5%;
     }

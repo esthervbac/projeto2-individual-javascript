@@ -63,7 +63,6 @@
         const valoresDeTransacoes = transacoes.map(({ valor }) => valor)
         console.log(valoresDeTransacoes)
         const total = pegueTotal(valoresDeTransacoes)
-        debugger 
         const totalFinal = formatarValorParaUsuario(total)
        
     /*  Se precisar jogar valores de Compras e Vendas
@@ -78,11 +77,10 @@
         } else {
             lucroPrejuizo.textContent = '[PREJUÍZO]'
         }
-
     }
 
     function formatarValorParaUsuario(valor) {
-        return Math.abs(valor).toLocaleString('pt-BR', {
+        return valor.toLocaleString('pt-BR', {
             style: 'currency',
             currency: 'BRL',
             minimumFractionDigits: 2,
@@ -206,7 +204,6 @@
             if (opcoesSelecionadas[i].text !== escolhendoVenda) {
                 valorInput.value = '-' + valor
 
-                console.log('')
             } else {
                 valorInput.value = valor
 

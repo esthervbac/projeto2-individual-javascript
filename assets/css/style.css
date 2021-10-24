@@ -23,6 +23,22 @@ hr {
     display: none;
 }
 
+.verde::after {
+    content: "[LUCRO]";
+    color: green;
+    font-weight: bold;
+    font-size: 10px;
+    display: none;
+}
+
+.vermelho::after {
+    content: "[PREJUÍZO]";
+    color: red;
+    font-weight: bold;
+    font-size: 10px;
+    display: none;
+}
+
 /*****Formulário*****/
 
 .formulario {
@@ -779,16 +795,11 @@ span#valor1.linha1-texto-val {
 }
 
 @media screen and (max-width: 812px) {
+    
     .menu-main .menu {
-        width: 76%;
+        width: 82%;
         margin-top: 2%;
-        margin-left: 15%;
-    }    
-
-    .menu-main .menu {
-        width: 78%;
-        margin-top: 2%;
-        margin-left: 9%;
+        margin-left: -1%;
     }
 
     .nova-transacao {
@@ -816,6 +827,15 @@ span#valor1.linha1-texto-val {
         padding-top: 30px;
         float: right;
     }
+
+    .texto-extr-trans {
+    width: 50%;
+    height: 50%;
+    font-size: 16.5px;
+    font-weight: bolder;
+    margin-left: 35%;
+    margin-bottom: 3%;
+    }   
 }
 
 @media screen and (max-width: 806px) {
@@ -1649,8 +1669,30 @@ span#valor1.linha1-texto-val {
         width: 330px;
     }
 
+    .texto-extr-trans {
+        width: 100%;
+        margin-left: 4%;
+        text-align: center;
+        padding-bottom: 10%;
+        margin-top: -10%;
+    }
+
+    .semtrans {
+        text-align: center;
+        font-weight: bold;
+        margin-top: -16%;
+        margin-left: 7%;
+    }
+
+    .sep-texto, .sep-total {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     #linha1 {
-        margin-top: 10%;
+        margin-top: 16%;
     }
 }
 

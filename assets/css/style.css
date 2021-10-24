@@ -341,14 +341,6 @@ span#valor1.linha1-texto-val {
     display: block;
 }
 
-#footer {
-    max-width: 2560px;
-    width: 100%;
-    height: 8px;
-    background-color: #333333;
-    bottom: 0%;
-    position: absolute;
-}
 
 /*****Media Queries*****/
 

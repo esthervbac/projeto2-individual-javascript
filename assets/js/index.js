@@ -73,9 +73,15 @@
         totalAtualizado.textContent = totalFinal
 
         if (total > 0) {
-            lucroPrejuizo.textContent = '[LUCRO]'
+            lucroPrejuizo.textContent = '[LUCRO]';
+            lucroPrejuizo.style.color = "green";
+            lucroPrejuizo.style.color.fontWeight = "bold";
+            lucroPrejuizo.style.color.fontSize = "10px";
         } else {
-            lucroPrejuizo.textContent = '[PREJUÍZO]'
+            lucroPrejuizo.textContent = '[PREJUÍZO]';
+            lucroPrejuizo.style.color = "red";
+            lucroPrejuizo.style.color.fontWeight = "bold";
+            lucroPrejuizo.style.color.fontSize = "10px";
         }
     }
 

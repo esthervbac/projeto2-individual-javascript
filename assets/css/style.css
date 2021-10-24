@@ -23,22 +23,6 @@ hr {
     display: none;
 }
 
-.verde::after {
-    content: "[LUCRO]";
-    color: green;
-    font-weight: bold;
-    font-size: 10px;
-    display: none;
-}
-
-.vermelho::after {
-    content: "[PREJUÍZO]";
-    color: red;
-    font-weight: bold;
-    font-size: 10px;
-    display: none;
-}
-
 /*****Formulário*****/
 
 .formulario {
@@ -718,6 +702,27 @@ span#valor1.linha1-texto-val {
         margin-top: -17px;
         margin-left: 12%;
     }
+
+    ul#linha1.linha1 {
+        margin-left: -5%;
+    }
+
+    .operadores {
+        width: 4%;
+        margin-left: -120%;
+        margin-top: 10px;
+    }
+    .linha1-texto-merc {
+        width: 57%;
+        padding-left: 1%;
+        margin-top: 3%;
+    }
+
+    span#valor1.linha1-texto-val {
+        width: 37%;
+        text-align: right;
+        margin-top: 3%;
+    }
 }
 
 @media screen and (max-width: 859px) {
@@ -734,44 +739,6 @@ span#valor1.linha1-texto-val {
         margin-top: 2%;
         margin-left: 3%;
     } 
-}
-
-@media screen and (max-width: 883px) {
-    .menu-main .menu {
-        width: 76%;
-        margin-top: 2%;
-        margin-left: 15%;
-    }    
-
-    .extrato {
-        max-width: 680px;
-        width: 46%;
-        display: block;
-        color: black;
-        margin-top: -41.8%;
-        align-items: center;
-        justify-content: center;
-        font-size: 13.5px;
-        margin-right: 2%;
-        padding-top: 30px;
-        float: right;
-    }
-
-    .texto-extr-trans {
-        width: 50%;
-        height: 50%;
-        font-size: 16.5px;
-        font-weight: bolder;
-        margin-left: 35%;
-        margin-bottom: 3%;
-    }
-
-    .semtrans {
-        text-align: center;
-        font-weight: bold;
-        margin-top: -17px;
-        margin-left: 12%;
-    }
 }
 
 @media screen and (max-width: 844px) {
@@ -1067,12 +1034,33 @@ span#valor1.linha1-texto-val {
         margin-top: -17px;
         margin-left: 0%;
     }
+
+    ul#linha1.linha1 {
+        margin-left: 0%;
+    }
+
+    .operadores {
+        width: 4%;
+        margin-left: -120%;
+        margin-top: 19px;
+    }
+    .linha1-texto-merc {
+        width: 57%;
+        padding-left: 1%;
+        margin-top: 3%;
+    }
 }
 
 @media screen and (max-width: 755px) {
     .menu-main:hover .menu-vert {
         margin-left: 0%;
     } 
+
+    .operadores {
+        width: 4%;
+        margin-left: -120%;
+        margin-top: 17px;
+    }
 }
 
 
@@ -1185,6 +1173,12 @@ span#valor1.linha1-texto-val {
         margin-left: -5%;
         margin-top: -9%;
     } 
+
+    .operadores {
+        width: 4%;
+        margin-left: -120%;
+        margin-top: 16px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -1571,6 +1565,15 @@ span#valor1.linha1-texto-val {
 
 @media screen and (max-width: 412px) { 
 
+    .nova-transacao {
+        width: 75%;
+        margin-top: -14%;
+    }
+
+    .extrato {
+        margin-top: -1%;
+    }
+
     .texto-extr-trans {
         width: 100%;
         margin-left: 5%;
@@ -1583,6 +1586,28 @@ span#valor1.linha1-texto-val {
         margin-top: -17px;
         margin-left: 14%;
     }
+
+    ul#linha1.linha1 {
+        margin-left: -5%;
+    }
+
+    .operadores {
+        width: 4%;
+        margin-left: -120%;
+        margin-top: 10px;
+    }
+    .linha1-texto-merc {
+        width: 57%;
+        padding-left: 1%;
+        margin-top: 3%;
+    }
+
+    span#valor1.linha1-texto-val {
+        width: 37%;
+        text-align: right;
+        margin-top: 3%;
+    }
+
 }
 
 @media screen and (max-width: 390px) { 
@@ -1622,6 +1647,12 @@ span#valor1.linha1-texto-val {
     input[type="submit"] {
         margin-left: -9%;
         width: 330px;
+    }
+
+    .operadores {
+        width: 4%;
+        margin-left: -120%;
+        margin-top: 9px;
     }
 }
 
@@ -1669,6 +1700,10 @@ span#valor1.linha1-texto-val {
         width: 330px;
     }
 
+    .extrato {
+        margin-top: 5%;
+    }
+
     .texto-extr-trans {
         width: 100%;
         margin-left: 4%;
@@ -1689,6 +1724,15 @@ span#valor1.linha1-texto-val {
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
+        padding-bottom: 5%;
+    }
+
+    .linha, .linha4 {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: left;
+        margin-bottom: -17%;
     }
 
     #linha1 {
@@ -1716,6 +1760,7 @@ span#valor1.linha1-texto-val {
 
     .nova-transacao {
         width: 75%;
+        margin-top: -14%;
     }
 
     .div-form {
@@ -1746,14 +1791,6 @@ span#valor1.linha1-texto-val {
         width: 300px;
     }
 
-    .texto-extr-trans {
-        width: 100%;
-        margin-left: 5%;
-        text-align: center;
-        padding-bottom: 10%;
-        margin-top: -10%;
-    }
-
     .semtrans {
         text-align: center;
         font-weight: bold;
@@ -1770,6 +1807,51 @@ span#valor1.linha1-texto-val {
 
     #linha1 {
         margin-top: 16%;
+    }
+
+    .texto-extr-trans {
+        width: 100%;
+        margin-left: 5%;
+        text-align: center;
+        padding-bottom: 4%;
+        margin-top: -15%;
+    }
+
+    .linha, .linha4 {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: left;
+        margin-bottom: -19%;
+    }
+
+    ul#linha1.linha1 {
+        margin-left: -6%;
+    }
+
+    .operadores {
+        width: 4%;
+        margin-left: -120%;
+        margin-top: 18px;
+    }
+
+    .linha1-texto-merc {
+        width: 57%;
+        padding-left: 1%;
+        margin-top: 6%;
+    }
+
+    span#valor1.linha1-texto-val {
+        width: 37%;
+        text-align: right;
+        margin-top: 6%;
+    }
+
+    .linha4-texto-val {
+        text-align: right;
+        margin-right: 3%;
+        width: 100%;
+        margin-bottom: 5%;
     }
 }
 
@@ -1866,6 +1948,7 @@ span#valor1.linha1-texto-val {
 
     .nova-transacao {
         width: 75%;
+        margin-top: -14%;
     }
 
     .div-form {
@@ -1908,14 +1991,6 @@ span#valor1.linha1-texto-val {
 
     }
 
-    .texto-extr-trans {
-        width: 100%;
-        margin-left: 5%;
-        text-align: center;
-        padding-bottom: 10%;
-        margin-top: -10%;
-    }
-
     .sep-texto, .sep-total {
         display: flex;
         width: 100%;
@@ -1942,5 +2017,50 @@ span#valor1.linha1-texto-val {
         margin-top: 1%;
         padding-bottom: -2%;
         padding-top: 0%;
+    }
+
+    .texto-extr-trans {
+        width: 100%;
+        margin-left: 5%;
+        text-align: center;
+        padding-bottom: 4%;
+        margin-top: -15%;
+    }
+
+    .linha, .linha4 {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: left;
+        margin-bottom: -21%;
+    }
+
+    ul#linha1.linha1 {
+        margin-left: -10%;
+    }
+
+    .operadores {
+        width: 4%;
+        margin-left: -120%;
+        margin-top: 14px;
+    }
+
+    .linha1-texto-merc {
+        width: 57%;
+        padding-left: 1%;
+        margin-top: 6%;
+    }
+
+    span#valor1.linha1-texto-val {
+        width: 37%;
+        text-align: right;
+        margin-top: 6%;
+    }
+
+    .linha4-texto-val {
+        text-align: right;
+        margin-right: 3%;
+        width: 100%;
+        margin-bottom: 5%;
     }
 }

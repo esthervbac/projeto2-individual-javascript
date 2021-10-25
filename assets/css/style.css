@@ -1866,7 +1866,16 @@ span#valor1.linha1-texto-val {
         margin-top: -15%;
     }
 
-    .linha, .linha4 {
+    .linha {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: left;
+        margin-bottom: -17%;
+        margin-top: 3%;
+    }
+
+    .linha4 {
         display: flex;
         width: 100%;
         flex-direction: row;

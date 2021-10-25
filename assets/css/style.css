@@ -1802,7 +1802,7 @@ span#valor1.linha1-texto-val {
 
     .nova-transacao {
         width: 75%;
-        margin-top: -14%;
+        margin-top: -8;
     }
 
     .div-form {
@@ -1840,6 +1840,13 @@ span#valor1.linha1-texto-val {
         margin-left: 14%;
     }
 
+    .extrato {
+        margin-top: 16%;
+        width: 94%;
+        margin-right: 5%;
+        bottom: 10%;
+    }
+
     .sep-texto, .sep-total {
         display: flex;
         width: 100%;
@@ -1865,6 +1872,7 @@ span#valor1.linha1-texto-val {
         flex-direction: row;
         justify-content: left;
         margin-bottom: -19%;
+        margin-top: 3%;
     }
 
     ul#linha1.linha1 {
@@ -1994,15 +2002,15 @@ span#valor1.linha1-texto-val {
       } 
 
       .menu-main:hover .menu-vert {
-        margin-left: -55.4%;
+        margin-left: -56.4%;
         width: 200px;
         margin-top: -24%;
     } 
 
     .nova-transacao {
-        width: 75%;
+        width: 70%;
         margin-top: -9%;
-        margin-left: 15%;
+        margin-left: 13%;
     }
 
     .texto-extr-trans {
@@ -2011,6 +2019,7 @@ span#valor1.linha1-texto-val {
         text-align: center;
         padding-bottom: 9%;
         margin-top: -15%;
+        margin-bottom: 10%;
     }
 
     .div-form {

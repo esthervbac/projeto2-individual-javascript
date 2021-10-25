@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header> 
+        <header> <!-- Começo do cabeçalho com logo e menu -->
             <div class="cabecalho">
                 <div class="logo-content">
                     <div class="logo">
@@ -29,10 +29,10 @@
                     </div>
                 </div>
             </div>
-        </header>
-        <div class="content">
+        </header> <!-- Fim do cabeçalho -->
+        <div class="content"> <!-- Começo do container com área de incluir transações e área de extrato -->
             <div class="empurrar"></div>
-            <div class="nova-transacao">
+            <div class="nova-transacao"> <!-- Começo da área de incluir transações -->
                 <span class="texto-nova-transacao">Nova transação</span>
                 <form class="formulario" id="form" name="formul" onsubmit="testaCampoValor(event);">
                     <div class="div-form">
@@ -61,8 +61,8 @@
             </div>
             <div class="hr-extrato">
                 <hr>
-            </div>
-            <div class="extrato" id="extrato">
+            </div> <!-- Fim da área de incluir transações -->
+            <div class="extrato" id="extrato"> <!-- Começo da área de extrato -->
                 <div class="texto-extr-trans">Extrato de transações</div>
                     <div class="linha">
                         <div class="linha-sep"></div>
@@ -87,8 +87,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> <!-- Fim da área de extrato -->
+        </div> <!-- Fim do container -->
     <script src="./assets/js/index.js"></script>
     </body>
 </html>

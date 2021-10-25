@@ -21,7 +21,7 @@
         atualizarLocalStorage()
         inicio()
     }
-    
+    // Adiciona as transações de mercadorias adicionadas pelo usuário e monta a li com a tabela da área extrato
     const adicionarTransacoesReais = ({ valor, nome, id }) => {
         const operador = valor < 0 ? '-' : '+'
         const cssClass = valor < 0 ? 'sinalmenos' : 'sinalmais'
@@ -45,7 +45,7 @@
         linha1Ul.append(li)
     }  
    
-
+    // Soma e diminui os valores adicionados pelo usuário na área de extrato
     const pegueCompras = valoresDeTransacoes => Math.abs(valoresDeTransacoes
         .filter(valor => valor < 0)
         .reduce((acumulador, valor) => acumulador + valor, 0))
@@ -59,9 +59,10 @@
     const pegueTotal = valoresDeTransacoes => valoresDeTransacoes
         .reduce((acumulador, transacao) => acumulador + transacao, 0)
 
+     // Atualiza o valor total das transações e diz se o usuário teve lucro ou prejuízo   
     const atualizarValoresTotais = () => {
         const valoresDeTransacoes = transacoes.map(({ valor }) => valor)
-        console.log(valoresDeTransacoes)
+       
         const total = pegueTotal(valoresDeTransacoes)
         const totalFinal = formatarValorParaUsuario(total)
        
@@ -84,7 +85,7 @@
             lucroPrejuizo.style.color.fontSize = "10px";
         }
     }
-
+    // Formata em estilo de moeda o valor enviado do localStorage para ser mostrado ao usuário na área de extrato
     function formatarValorParaUsuario(valor) {
         return valor.toLocaleString('pt-BR', {
             style: 'currency',
@@ -93,19 +94,19 @@
             maximumFractionDigits: 2
         });
     }
-
+    // Cria cada linha de mercadorias adicionadas pelo usuário de atualiza os valores totais
     const inicio = () => {
         linha1Ul.innerHTML = ''
         transacoes.forEach(adicionarTransacoesReais)
         atualizarValoresTotais()
     }
-
+    // Atualiza o localStorage com os valores enviados pelo usuário
     inicio()
 
     const atualizarLocalStorage = () => {
         localStorage.setItem('transacoes', JSON.stringify(transacoes))
     }
-
+    // Gera ID, e adiciona o nome da mercadoria e seu valor 
     const gerarID = () => Math.round(Math.random() * 1000)
 
     const adicionarArrayNasTransacoes = (transacaoOpcoes, transacaoNomeMercadoria, transacaoValorMercadoria) => {
@@ -135,7 +136,7 @@
         transacaoOpcaoCompra === '' || 
         transacaoNomeMercadoria === '' || 
         transacaoValorMercadoria === ''
-
+        // Verifica se algum campo está vazio, se estiver diz para usuário preencher
         if (algumInputVazio) {
             alert('Por favor preencha todos os campos abaixo')
             return
@@ -183,7 +184,7 @@
         else
             return false;
     }
-
+    // Verifica se apenas números podem ser inseridos nos inputs, não deixa letras serem adicionadas
     function testaCampoValor(e) {
         e.preventDefault()
     
@@ -191,7 +192,7 @@
             e.target.value += e.key
         }
     } 
-
+    // Formata em estilo de moeda o valor adicionado pelo usuário enquanto ele digita
         function formatarMoeda(e) {
 
             let valor = valorInput.value
@@ -215,7 +216,7 @@
 
             }
     }
-
+    // Formata para valores sem virgulas quando valor é enviado para o localStorage
     function formatarValorRealParaMaquina(valor) {
         return parseFloat(valor.toString().replace('.', '').replace(',', '.'));
     }

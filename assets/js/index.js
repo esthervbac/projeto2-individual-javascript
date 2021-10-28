@@ -210,10 +210,25 @@
         valor = valor.replace(/([0-9]{2})$/g, ",$1"); 
         valor = valor.replace (/\B(?=(\d{3})+(?!\d))/g, ".")
 
-        valorInput.value = valor
+        let escolhendoVenda = document.querySelector('#venda').text;
+        let opcoesSelecionadas = document.querySelector('#trans').selectedOptions;
+    
+        for(i=0; i<opcoesSelecionadas.length; i++)
+            if (opcoesSelecionadas[i].text !== escolhendoVenda) {
+                valorInput.value = '-' + valor
+
+            } else {
+                valorInput.value = valor
+
+            }
     }
 
 	// Formata para valores sem virgulas quando valor é enviado para o localStorage
     function formatarValorRealParaMaquina(valor) {
         return parseFloat(valor.toString().replace('.', '').replace(',', '.'));
+    }
+
+    function apagarValorNome() {
+        valorInput.value = '';
+        nomeMercadoriaInput.value = '';
     }

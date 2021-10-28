@@ -38,7 +38,7 @@
                     <div class="div-form">
                         <div class="div-trans">
                             <label for="trans">Tipo de transação</label>
-                            <select id="trans" name="trans" required>
+                            <select id="trans" name="trans" required onchange="apagarValorNome()">
                                 <option value="compra" id="compra" class="compra">Compra</option>
                                 <option value="venda" id="venda" class="venda">Venda</option>
                             </select>

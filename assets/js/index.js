@@ -199,10 +199,10 @@
         }
     } 
 		
-		// Formata em estilo de moeda o valor adicionado pelo usuário enquanto ele digita
-        function formatarMoeda(e) {
+	// Formata em estilo de moeda o valor adicionado pelo usuário enquanto ele digita
+    function formatarMoeda(e) {
 
-            let valor = valorInput.value
+        let valor = valorInput.value
     
         valor = valor + '';
         valor = valor.replace(/[\D]+/g, '');
@@ -210,17 +210,7 @@
         valor = valor.replace(/([0-9]{2})$/g, ",$1"); 
         valor = valor.replace (/\B(?=(\d{3})+(?!\d))/g, ".")
 
-        let escolhendoVenda = document.querySelector('#venda').text;
-        let opcoesSelecionadas = document.querySelector('#trans').selectedOptions;
-    
-        for(i=0; i<opcoesSelecionadas.length; i++)
-            if (opcoesSelecionadas[i].text !== escolhendoVenda) {
-                valorInput.value = '-' + valor
-
-            } else {
-                valorInput.value = valor
-
-            }
+        valorInput.value = valor
     }
 
 	// Formata para valores sem virgulas quando valor é enviado para o localStorage
